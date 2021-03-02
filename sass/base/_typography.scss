@@ -1,13 +1,18 @@
 .header {
-  .intro-phase {
-    @include intro-phases-fonts;
+  display: none;
+  .heading-intro-1,
+  .heading-intro-2 {
+    @include header-intro-font;
     text-align: center;
-  }
-  .enter-btn {
-    font-size: 200%;
   }
 }
 
 .grid-item {
   font-size: 5rem;
+}
+.navbar {
+  font-size: 1rem;
+  .navbar-brand {
+    font-size: 3rem;
+  }
 }

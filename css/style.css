@@ -17,37 +17,49 @@ body {
   width: 100%;
 }
 
-.header .intro-phase {
+.header {
+  display: none;
+}
+.header .heading-intro-1,
+.header .heading-intro-2 {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-size: 6rem;
   text-align: center;
-}
-.header .enter-btn {
-  font-size: 200%;
 }
 
 .grid-item {
   font-size: 5rem;
 }
 
+.navbar {
+  font-size: 2rem;
+}
+.navbar .navbar-brand {
+  font-size: 3rem;
+}
+
 .grid-container {
-  display: grid;
+  display: none;
   grid-template-columns: auto auto auto;
   background-color: #2196f3;
-  padding: 10px;
+  padding: 0.8rem;
+  margin: 45vh 10vw 45vh 10vw;
 }
 
 .grid-item {
   background-color: rgba(255, 255, 255, 0.8);
-  border: 1px solid rgba(0, 0, 0, 0.8);
-  padding: 20px;
-  font-size: 30px;
+  border: 0.1rem solid rgba(0, 0, 0, 0.8);
+  padding: 2rem;
+  font-size: 2rem;
   text-align: center;
 }
 
 .header {
-  display: none;
   margin-top: 45vh;
+}
+
+.navbar {
+  font-size: 2rem;
 }
 
 /*# sourceMappingURL=style.css.map */
