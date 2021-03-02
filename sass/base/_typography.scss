@@ -1,0 +1,9 @@
+.header {
+  .intro-phase {
+    @include intro-phases-fonts;
+    text-align: center;
+  }
+  .enter-btn {
+    font-size: 200%;
+  }
+}

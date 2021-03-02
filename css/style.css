@@ -1,0 +1,42 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: aquamarine;
+  box-sizing: border-box;
+  height: 100%;
+  width: 100%;
+}
+
+.header .intro-phase {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 6rem;
+  text-align: center;
+}
+.header .enter-btn {
+  font-size: 200%;
+}
+
+.header {
+  margin-top: 45vh;
+}
+.header .enter-btn {
+  background-color: greenyellow;
+  width: 10%;
+  margin-top: 2%;
+  margin-left: 45vw;
+  padding: 0.5% 1.5% 0.5% 1.5%;
+  border: none;
+  border-radius: 45%;
+}
+
+/*# sourceMappingURL=style.css.map */
