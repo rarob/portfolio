@@ -26,17 +26,28 @@ body {
   font-size: 200%;
 }
 
-.header {
-  margin-top: 45vh;
+.grid-item {
+  font-size: 5rem;
 }
-.header .enter-btn {
-  background-color: greenyellow;
-  width: 10%;
-  margin-top: 2%;
-  margin-left: 45vw;
-  padding: 0.5% 1.5% 0.5% 1.5%;
-  border: none;
-  border-radius: 45%;
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  background-color: #2196f3;
+  padding: 10px;
+}
+
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+}
+
+.header {
+  display: none;
+  margin-top: 45vh;
 }
 
 /*# sourceMappingURL=style.css.map */
