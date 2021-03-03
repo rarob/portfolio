@@ -32,7 +32,7 @@ body {
 }
 
 .navbar {
-  font-size: 2rem;
+  font-size: 1.7rem;
 }
 .navbar .navbar-brand {
   font-size: 3rem;
@@ -58,8 +58,34 @@ body {
   margin-top: 45vh;
 }
 
-.navbar {
-  font-size: 2rem;
+.navbar.navbar-expand-lg.navbar-light.bg-light .container-fluid .navbar-nav.margin-override {
+  margin-left: 3rem;
+}
+.navbar.navbar-expand-lg.navbar-light.bg-light .container-fluid .navbar-nav.margin-override li {
+  padding-right: 1.5rem;
+}
+.navbar.navbar-expand-lg.navbar-light.bg-light .container-fluid .navbar-toggler {
+  margin-left: 50%;
+}
+.navbar.navbar-expand-lg.navbar-light.bg-light .container-fluid .icon-navbar {
+  margin-right: 7rem;
+  display: inherit;
+  list-style: none;
+}
+.navbar.navbar-expand-lg.navbar-light.bg-light .container-fluid .icon-navbar li {
+  padding-right: 30%;
+}
+.navbar.navbar-expand-lg.navbar-light.bg-light .container-fluid .icon-navbar li ion-icon {
+  color: gray;
+}
+@media (max-width: 1000px) {
+  .navbar.navbar-expand-lg.navbar-light.bg-light .container-fluid ion-icon {
+    display: none;
+  }
+}
+
+.navbar .navbar-brand {
+  margin-left: 3%;
 }
 
 /*# sourceMappingURL=style.css.map */
