@@ -11,7 +11,7 @@ html {
 }
 
 body {
-  background-color: aquamarine;
+  background-color: #3aafa9;
   box-sizing: border-box;
   height: 100%;
   width: 100%;
@@ -34,8 +34,16 @@ body {
 .navbar {
   font-size: 1.7rem;
 }
+.navbar a {
+  color: white !important;
+}
 .navbar .navbar-brand {
   font-size: 3rem;
+  color: white;
+}
+
+#contact {
+  font-size: 1.5rem;
 }
 
 .grid-container {
@@ -58,6 +66,9 @@ body {
   margin-top: 45vh;
 }
 
+.navbar.navbar-expand-lg.navbar-light.bg-light {
+  background-color: #3aafa9 !important;
+}
 .navbar.navbar-expand-lg.navbar-light.bg-light .container-fluid .navbar-nav.margin-override {
   margin-left: 3rem;
 }
@@ -66,20 +77,33 @@ body {
 }
 .navbar.navbar-expand-lg.navbar-light.bg-light .container-fluid .navbar-toggler {
   margin-left: 50%;
+  background-color: #def2f1;
 }
 .navbar.navbar-expand-lg.navbar-light.bg-light .container-fluid .icon-navbar {
-  margin-right: 7rem;
+  margin-right: 9rem;
   display: inherit;
   list-style: none;
 }
 .navbar.navbar-expand-lg.navbar-light.bg-light .container-fluid .icon-navbar li {
-  padding-right: 30%;
+  padding-right: 20%;
+}
+.navbar.navbar-expand-lg.navbar-light.bg-light .container-fluid .icon-navbar li #contact {
+  color: white;
+  background-color: black;
+  margin-top: 41%;
+  border-radius: 30%;
+  border: none;
+  width: 115%;
 }
 .navbar.navbar-expand-lg.navbar-light.bg-light .container-fluid .icon-navbar li ion-icon {
-  color: gray;
+  color: white;
+  margin-top: 50%;
 }
 @media (max-width: 1000px) {
   .navbar.navbar-expand-lg.navbar-light.bg-light .container-fluid ion-icon {
+    display: none;
+  }
+  .navbar.navbar-expand-lg.navbar-light.bg-light .container-fluid #contact {
     display: none;
   }
 }

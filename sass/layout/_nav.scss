@@ -1,4 +1,6 @@
 .navbar.navbar-expand-lg.navbar-light.bg-light {
+  background-color: #3aafa9 !important;
+
   .container-fluid {
     .navbar-nav.margin-override {
       margin-left: 3rem;
@@ -8,21 +10,33 @@
     }
     .navbar-toggler {
       margin-left: 50%;
+      background-color: #def2f1;
     }
     .icon-navbar {
-      margin-right: 7rem;
+      margin-right: 9rem;
       display: inherit;
       list-style: none;
       li {
-        padding-right: 30%;
-
+        padding-right: 20%;
+        #contact {
+          color: white;
+          background-color: black;
+          margin-top: 41%;
+          border-radius: 30%;
+          border: none;
+          width: 115%;
+        }
         ion-icon {
-          color: gray;
+          color: white;
+          margin-top: 50%;
         }
       }
     }
     @media (max-width: $breakpoint-tablet) {
       ion-icon {
+        display: none;
+      }
+      #contact {
         display: none;
       }
     }
