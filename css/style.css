@@ -42,7 +42,7 @@ body {
   color: white;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1024px) {
   .navbar.navbar-expand-lg.navbar-light.bg-light .container-fluid .navbar-brand {
     font-size: 2rem;
   }
@@ -101,7 +101,7 @@ body {
   color: white;
   margin-top: 50%;
 }
-@media (max-width: 1000px) {
+@media (max-width: 1024px) {
   .navbar.navbar-expand-lg.navbar-light.bg-light .container-fluid ion-icon {
     display: none;
   }
@@ -109,7 +109,7 @@ body {
     display: none;
   }
   .navbar.navbar-expand-lg.navbar-light.bg-light .container-fluid .navbar-toggler {
-    margin: 0;
+    margin-left: 20%;
   }
 }
 
