@@ -53,8 +53,18 @@ body {
   }
 }
 .about-me .about-me-container h2 {
-  color: white;
+  text-align: center;
+  text-decoration: none;
+  margin-left: 1%;
+  color: #66fcf1;
   font-size: 5rem;
+  margin-top: 14%;
+}
+.about-me .about-me-container p {
+  font-size: 1.7rem;
+  color: white;
+  text-align: center;
+  margin: 1% 15% 10% 15%;
 }
 
 .learn-more {
@@ -160,14 +170,10 @@ body {
   background: transparent;
 }
 
-.about-me .about-me-container {
-  margin-top: 14%;
-}
-.about-me .about-me-container h2 {
-  text-align: left;
-  text-decoration: none;
-  margin-left: 2%;
-  color: #c5c6c7;
+@media (max-width: 1024px) {
+  .about-me #am p {
+    font-size: 1.5rem;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

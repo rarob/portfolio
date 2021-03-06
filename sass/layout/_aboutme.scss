@@ -1,8 +1,9 @@
-.about-me {
-  .about-me-container {
-    margin-top: 14%;
-    h2 {
-      @include section-headers;
+@media (max-width: $breakpoint-tablet) {
+  .about-me {
+    #am {
+      p {
+        font-size: 1.5rem;
+      }
     }
   }
 }

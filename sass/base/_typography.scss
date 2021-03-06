@@ -43,8 +43,9 @@
 .about-me {
   .about-me-container {
     h2 {
-      color: white;
-      font-size: 5rem;
+      @include section-headers;
+      margin-top: 14%;
     }
+    @include section-paragraphs;
   }
 }

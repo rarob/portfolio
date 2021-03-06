@@ -3,8 +3,19 @@
 }
 
 @mixin section-headers {
-  text-align: left;
+  text-align: center;
   text-decoration: none;
-  margin-left: 2%;
-  color: $grey;
+  margin-left: 1%;
+
+  color: $light-blue;
+  font-size: 5rem;
+}
+
+@mixin section-paragraphs {
+  p {
+    font-size: 1.7rem;
+    color: white;
+    text-align: center;
+    margin: 1% 15% 10% 15%;
+  }
 }
