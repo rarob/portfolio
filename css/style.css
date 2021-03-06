@@ -12,6 +12,8 @@ html {
 
 body {
   background-image: url("/img/black.jpg");
+  background-repeat: no-repeat;
+  background-size: auto;
   box-sizing: border-box;
   height: 100%;
   width: 100%;
@@ -174,6 +176,14 @@ body {
   .about-me #am p {
     font-size: 1.5rem;
   }
+}
+.skills .container {
+  width: 100%;
+  height: 100%;
+  display: inline;
+}
+.skills .container .row .col {
+  color: white !important;
 }
 
 /*# sourceMappingURL=style.css.map */
