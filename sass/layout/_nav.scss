@@ -1,6 +1,5 @@
 .navbar.navbar-expand-lg.navbar-light.bg-light {
   .container-fluid {
-    background-color: black;
     .navbar-nav.margin-override {
       margin-left: 3rem;
       li {
@@ -19,9 +18,9 @@
       li {
         padding-right: 20%;
         #contact {
-          color: white;
-          background-color: black;
-          margin-top: 41%;
+          color: #66fcf1;
+          background-color: transparent;
+          margin-top: 35%;
           border-radius: 30%;
           border: none;
           width: 115%;
@@ -38,6 +37,9 @@
       }
       #contact {
         display: none;
+      }
+      .navbar-toggler {
+        margin: 0;
       }
     }
   }

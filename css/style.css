@@ -42,10 +42,15 @@ body {
   color: white;
 }
 
-#contact {
-  font-size: 1.5rem;
-}
+@media (max-width: 1000px) {
+  .navbar.navbar-expand-lg.navbar-light.bg-light .container-fluid .navbar-brand {
+    font-size: 2rem;
+  }
 
+  #contact {
+    font-size: 1.5rem;
+  }
+}
 .grid-container {
   display: none;
   grid-template-columns: auto auto auto;
@@ -66,9 +71,6 @@ body {
   margin-top: 45vh;
 }
 
-.navbar.navbar-expand-lg.navbar-light.bg-light .container-fluid {
-  background-color: black;
-}
 .navbar.navbar-expand-lg.navbar-light.bg-light .container-fluid .navbar-nav.margin-override {
   margin-left: 3rem;
 }
@@ -88,9 +90,9 @@ body {
   padding-right: 20%;
 }
 .navbar.navbar-expand-lg.navbar-light.bg-light .container-fluid .icon-navbar li #contact {
-  color: white;
-  background-color: black;
-  margin-top: 41%;
+  color: #66fcf1;
+  background-color: transparent;
+  margin-top: 35%;
   border-radius: 30%;
   border: none;
   width: 115%;
@@ -105,6 +107,9 @@ body {
   }
   .navbar.navbar-expand-lg.navbar-light.bg-light .container-fluid #contact {
     display: none;
+  }
+  .navbar.navbar-expand-lg.navbar-light.bg-light .container-fluid .navbar-toggler {
+    margin: 0;
   }
 }
 
