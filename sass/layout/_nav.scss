@@ -1,7 +1,6 @@
 .navbar.navbar-expand-lg.navbar-light.bg-light {
-  background-color: #3aafa9 !important;
-
   .container-fluid {
+    background-color: black;
     .navbar-nav.margin-override {
       margin-left: 3rem;
       li {
@@ -10,8 +9,9 @@
     }
     .navbar-toggler {
       margin-left: 50%;
-      background-color: #def2f1;
+      background-color: #66fcf1;
     }
+
     .icon-navbar {
       margin-right: 9rem;
       display: inherit;
@@ -47,4 +47,11 @@
   .navbar-brand {
     margin-left: 3%;
   }
+}
+
+.navbar.transparent.navbar-expand-lg.navbar-light.bg-light {
+  background-image: url("/img/black.jpg");
+}
+.navbar-inner {
+  background: transparent;
 }

@@ -11,7 +11,7 @@ html {
 }
 
 body {
-  background-color: #3aafa9;
+  background-image: url("/img/black.jpg");
   box-sizing: border-box;
   height: 100%;
   width: 100%;
@@ -66,8 +66,8 @@ body {
   margin-top: 45vh;
 }
 
-.navbar.navbar-expand-lg.navbar-light.bg-light {
-  background-color: #3aafa9 !important;
+.navbar.navbar-expand-lg.navbar-light.bg-light .container-fluid {
+  background-color: black;
 }
 .navbar.navbar-expand-lg.navbar-light.bg-light .container-fluid .navbar-nav.margin-override {
   margin-left: 3rem;
@@ -77,7 +77,7 @@ body {
 }
 .navbar.navbar-expand-lg.navbar-light.bg-light .container-fluid .navbar-toggler {
   margin-left: 50%;
-  background-color: #def2f1;
+  background-color: #66fcf1;
 }
 .navbar.navbar-expand-lg.navbar-light.bg-light .container-fluid .icon-navbar {
   margin-right: 9rem;
@@ -110,6 +110,14 @@ body {
 
 .navbar .navbar-brand {
   margin-left: 3%;
+}
+
+.navbar.transparent.navbar-expand-lg.navbar-light.bg-light {
+  background-image: url("/img/black.jpg");
+}
+
+.navbar-inner {
+  background: transparent;
 }
 
 /*# sourceMappingURL=style.css.map */
