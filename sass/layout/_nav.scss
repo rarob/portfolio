@@ -8,7 +8,7 @@
     }
     .navbar-toggler {
       margin-left: 50%;
-      background-color: #66fcf1;
+      background-color: $light-blue;
     }
 
     .icon-navbar {
@@ -18,7 +18,7 @@
       li {
         padding-right: 20%;
         #contact {
-          color: #66fcf1;
+          color: $light-blue;
           background-color: transparent;
           margin-top: 35%;
           border-radius: 30%;
