@@ -1,0 +1,8 @@
+.about-me {
+  .about-me-container {
+    margin-top: 14%;
+    h2 {
+      @include section-headers;
+    }
+  }
+}

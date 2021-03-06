@@ -1,3 +1,10 @@
 @mixin header-intro-font {
   font-family: "Anton", sans-serif;
 }
+
+@mixin section-headers {
+  text-align: left;
+  text-decoration: none;
+  margin-left: 2%;
+  color: $grey;
+}

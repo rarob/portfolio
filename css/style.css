@@ -52,6 +52,24 @@ body {
     font-size: 1.5rem;
   }
 }
+.about-me .about-me-container h2 {
+  color: white;
+  font-size: 5rem;
+}
+
+.learn-more {
+  text-align: center;
+  margin-top: 1%;
+  font-size: 2rem;
+}
+.learn-more a {
+  color: #45a29e;
+}
+.learn-more a:hover {
+  opacity: 20%;
+  cursor: pointer;
+}
+
 .grid-container {
   display: none;
   grid-template-columns: auto auto auto;
@@ -140,6 +158,16 @@ body {
 
 .navbar-inner {
   background: transparent;
+}
+
+.about-me .about-me-container {
+  margin-top: 14%;
+}
+.about-me .about-me-container h2 {
+  text-align: left;
+  text-decoration: none;
+  margin-left: 2%;
+  color: #c5c6c7;
 }
 
 /*# sourceMappingURL=style.css.map */
