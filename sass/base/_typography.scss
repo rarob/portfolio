@@ -49,3 +49,7 @@
     @include section-paragraphs;
   }
 }
+
+#skills-header {
+  @include section-headers;
+}
