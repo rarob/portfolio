@@ -216,6 +216,7 @@ body {
 
 @media (max-width: 1024px) {
   div .row .col {
+    padding-right: 0.5rem;
     background-image: none !important;
     margin-top: 2%;
   }
@@ -234,6 +235,10 @@ body {
   div .row .col #js {
     width: 65% !important;
     height: 85% !important;
+  }
+
+  #descriptions .row .col {
+    padding-top: 0px;
   }
 }
 .projects {
