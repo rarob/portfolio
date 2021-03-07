@@ -8,6 +8,8 @@
 
 html {
   font-size: 62.5%;
+  width: auto;
+  height: auto;
 }
 
 body {
@@ -15,8 +17,8 @@ body {
   background-repeat: no-repeat;
   background-size: auto;
   box-sizing: border-box;
-  height: 100%;
-  width: 100%;
+  height: auto;
+  width: auto;
 }
 
 .header .heading-1 {
@@ -126,6 +128,11 @@ body {
     text-align: center;
   }
 }
+@media (max-width: 1024px) {
+  .header {
+    margin-top: 25vh;
+  }
+}
 .navbar.navbar-expand-lg.navbar-light.bg-light .container-fluid .navbar-nav.margin-override {
   margin-left: 3rem;
 }
@@ -182,36 +189,56 @@ body {
 
 @media (max-width: 1024px) {
   .about-me #am p {
-    font-size: 1rem;
+    font-size: 1.25rem;
   }
 }
-.skills .container {
-  width: 100vw;
-}
 .skills .container .row .col {
+  background-image: url(/img/black-repeat.jpg);
   text-align: center;
   color: white !important;
 }
-.skills .container .row .col #bs {
-  width: 50%;
-  height: 100%;
-}
 .skills .container .row .col #html {
-  width: 50%;
-  height: 100%;
+  width: 55%;
+  height: 75%;
+}
+.skills .container .row .col #bs {
+  width: 55%;
+  height: 75%;
 }
 .skills .container .row .col #scss {
-  width: 50%;
-  height: 100%;
+  width: 55%;
+  height: 75%;
 }
 .skills .container .row .col #js {
-  width: 50%;
-  height: 100%;
+  width: 55%;
+  height: 75%;
 }
 
+@media (max-width: 1024px) {
+  div .row .col {
+    background-image: none !important;
+    margin-top: 2%;
+  }
+  div .row .col #html {
+    width: 65% !important;
+    height: 85% !important;
+  }
+  div .row .col #bs {
+    width: 65% !important;
+    height: 85% !important;
+  }
+  div .row .col #scss {
+    width: 65% !important;
+    height: 85% !important;
+  }
+  div .row .col #js {
+    width: 65% !important;
+    height: 85% !important;
+  }
+}
 .projects {
   background-image: url("/img/black-repeat.jpg");
-  display: flex;
+  display: none;
   justify-content: center;
 }
 

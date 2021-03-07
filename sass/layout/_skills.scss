@@ -1,28 +1,52 @@
 .skills {
   .container {
-    width: 100vw;
     .row {
       .col {
+        background-image: url(/img/black-repeat.jpg);
+
         text-align: center;
         color: white !important;
 
-        #bs {
-          width: 50%;
-          height: 100%;
-        }
         #html {
-          width: 50%;
-          height: 100%;
+          width: 55%;
+          height: 75%;
+        }
+        #bs {
+          width: 55%;
+          height: 75%;
         }
         #scss {
-          width: 50%;
-          height: 100%;
+          width: 55%;
+          height: 75%;
         }
         #js {
-          width: 50%;
-          height: 100%;
+          width: 55%;
+          height: 75%;
         }
       }
+    }
+  }
+}
+@media (max-width: $breakpoint-tablet) {
+  div .row .col {
+    background-image: none !important;
+    margin-top: 2%;
+
+    #html {
+      width: 65% !important;
+      height: 85% !important;
+    }
+    #bs {
+      width: 65% !important;
+      height: 85% !important;
+    }
+    #scss {
+      width: 65% !important;
+      height: 85% !important;
+    }
+    #js {
+      width: 65% !important;
+      height: 85% !important;
     }
   }
 }

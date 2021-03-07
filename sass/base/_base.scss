@@ -9,6 +9,8 @@
 html {
   // This defines that 1rem is, therefore shouldn't go in typo file. Responsive Key
   font-size: 62.5%;
+  width: auto;
+  height: auto;
 }
 
 body {
@@ -16,6 +18,6 @@ body {
   background-repeat: no-repeat;
   background-size: auto;
   box-sizing: border-box;
-  height: 100%;
-  width: 100%;
+  height: auto;
+  width: auto;
 }
