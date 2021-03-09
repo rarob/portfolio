@@ -101,6 +101,19 @@ body {
     font-size: 0.9rem;
   }
 }
+.projects #projects-header {
+  text-align: center;
+  text-decoration: none;
+  margin-left: 1%;
+  color: #66fcf1;
+  font-size: 5rem;
+}
+.projects p {
+  color: white;
+  text-align: center;
+  font-size: 150%;
+}
+
 .learn-more {
   text-align: center;
   margin-top: 1%;
@@ -214,40 +227,42 @@ body {
     font-size: 1.25rem;
   }
 }
-.skills .container {
-  display: flex !important;
+.skills#skills {
   background-image: url("/img/black-repeat.jpg");
   background-repeat: repeat;
 }
-.skills .container .row {
+.skills#skills .container {
+  display: flex !important;
+}
+.skills#skills .container .row {
   margin-top: 0rem;
 }
-.skills .container .row .col {
+.skills#skills .container .row .col {
   text-align: center;
   color: white !important;
 }
-.skills .container .row .col #html {
+.skills#skills .container .row .col #html {
   width: 55%;
   height: 75%;
 }
-.skills .container .row .col #bs {
+.skills#skills .container .row .col #bs {
   width: 55%;
   height: 75%;
 }
-.skills .container .row .col #scss {
+.skills#skills .container .row .col #scss {
   width: 55%;
   height: 75%;
 }
-.skills .container .row .col #js {
+.skills#skills .container .row .col #js {
   width: 55%;
   height: 75%;
 }
-.skills .container .row .col .btn.btn-secondary {
+.skills#skills .container .row .col .btn.btn-secondary {
   background-color: transparent;
   border: none;
   padding: 0;
 }
-.skills .container .row .col .btn.btn-secondary::after {
+.skills#skills .container .row .col .btn.btn-secondary::after {
   border: none;
 }
 
@@ -288,8 +303,49 @@ body {
 }
 .projects {
   background-image: url("/img/black-repeat.jpg");
-  display: none;
   justify-content: center;
+}
+.projects #projects-header {
+  text-align: center;
+  text-decoration: none;
+  margin-left: 1%;
+  color: #66fcf1;
+  font-size: 5rem;
+  padding-top: 10rem;
+}
+.projects p {
+  color: white;
+  text-align: center;
+}
+.projects .card-holder {
+  display: flex;
+  justify-content: center;
+  padding-top: 1%;
+}
+.projects .card {
+  width: 40rem;
+  background-color: #1f2833;
+  margin-right: 4rem;
+  border-radius: 5%;
+}
+.projects .card:first-child {
+  margin-left: 2rem;
+}
+.projects .card:last-child {
+  margin-right: 2rem;
+}
+.projects .card img {
+  border-radius: 20%;
+}
+.projects .card p {
+  font-size: 1.5rem;
+}
+.projects .card .btn.btn-primary {
+  font-weight: 400;
+  font-size: 1.4rem;
+  color: white;
+  background-color: #0b0c10;
+  border-color: #45a29e;
 }
 
 /*# sourceMappingURL=style.css.map */

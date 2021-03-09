@@ -78,5 +78,16 @@
   }
 }
 
+//PROJECTS
+.projects {
+  #projects-header {
+    @include section-headers;
+  }
+  p {
+    color: white;
+    text-align: center;
+    font-size: 150%;
+  }
+}
 @media (max-width: $breakpoint-tablet) {
 }

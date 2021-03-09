@@ -1,5 +1,45 @@
 .projects {
   background-image: url("/img/black-repeat.jpg");
-  display: none;
+
   justify-content: center;
+  #projects-header {
+    @include section-headers;
+    padding-top: 10rem;
+  }
+  p {
+    color: white;
+    text-align: center;
+  }
+  .card-holder {
+    display: flex;
+    justify-content: center;
+    padding-top: 1%;
+  }
+  .card {
+    width: 40rem;
+    background-color: #1f2833;
+    margin-right: 4rem;
+    border-radius: 5%;
+    &:first-child {
+      margin-left: 2rem;
+    }
+    &:last-child {
+      margin-right: 2rem;
+    }
+    img {
+      border-radius: 20%;
+    }
+    p {
+      font-size: 1.5rem;
+    }
+    .btn.btn-primary {
+      font-weight: 400;
+      font-size: 1.4rem;
+      color: white;
+      background-color: #0b0c10;
+      border-color: #45a29e;
+    }
+  }
+}
+@media (max-width: $breakpoint-tablet) {
 }

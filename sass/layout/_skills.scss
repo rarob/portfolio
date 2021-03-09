@@ -1,8 +1,8 @@
-.skills {
+.skills#skills {
+  background-image: url("/img/black-repeat.jpg");
+  background-repeat: repeat;
   .container {
     display: flex !important;
-    background-image: url("/img/black-repeat.jpg");
-    background-repeat: repeat;
 
     .row {
       margin-top: 0rem;
