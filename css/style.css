@@ -87,7 +87,7 @@ body {
   }
 }
 #skills--subheader {
-  color: white !important;
+  color: white;
   text-align: center;
   font-size: 150%;
 }

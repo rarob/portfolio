@@ -18,7 +18,7 @@
 
 <body>
 
-
+  <!--Navigation Bar-->
   <nav class="navbar transparent navbar-expand-lg navbar-light bg-light" />
   <div class="container-fluid">
     <a class="navbar-brand" href="#">&lt Bobby Robinson /&gt</a>
@@ -57,6 +57,7 @@
   </div>
   </nav>
 
+  <!-- INTRO -->
   <main>
     <header class="header">
       <h1 class="heading-1">HELLO</h1>
@@ -72,6 +73,7 @@
     </div>
   </main>
 
+  <!--ABOUT ME SECTION-->
   <section class='about-me'>
     <div id='am' class='about-me-container'>
       <h2><b>About Me</b></h2>
@@ -91,42 +93,42 @@
 
   </section>
 
-
-
+  <!--SKILLS SECTION-->
   <section class='skills' id='skills'>
     <h1 id='skills-header'>
       <b>Skills</b>
     </h1>
     <p id='skills--subheader'>
-      Tap or click each icon for additional information</p>
+      Tap or click each icon to open/close additional information</p>
 
     <div class="container">
       <div class="row">
 
         <div class="col">
           <button type="button" class="btn btn-secondary" data-bs-container="body" data-bs-toggle="popover"
-            data-bs-placement="bottom" data-bs-content="bottom popover">
+            data-bs-placement="bottom" data-bs-content="BEM, Accessibility, SEO Optimization">
             <img id='html' src='/img/html.png' alt="HTML5">
           </button>
         </div>
 
         <div class="col">
           <button type="button" class="btn btn-secondary" data-bs-container="body" data-bs-toggle="popover"
-            data-bs-placement="bottom" data-bs-content="bottom popover">
+            data-bs-placement="bottom" data-bs-content="Component Customization, Overrides, Grids, Plugins ">
             <img id='bs' src='/img/bs.png' alt="Bootstrap">
           </button>
         </div>
 
         <div class="col">
           <button type="button" class="btn btn-secondary" data-bs-container="body" data-bs-toggle="popover"
-            data-bs-placement="bottom" data-bs-content="bottom popover">
-            <img id='scss' src='/img/scss.png' alt="Scss">
+            data-bs-placement="bottom" data-bs-content="Responsive Design, Mobile-first, Mixins, Variables, Functions">
+            <img id='scss' src='/img/scss.png' alt="SCSS">
           </button>
         </div>
 
         <div class="col">
           <button type="button" class="btn btn-secondary" data-bs-container="body" data-bs-toggle="popover"
-            data-bs-placement="bottom" data-bs-content="bottom popover">
+            data-bs-placement="bottom"
+            data-bs-content="Agile Development, ES6, DOM Manipulation, Libraries, jQuery, 3rd Party API Integration">
             <img id='js' src='/img/javascript.png' alt="Javascript"></button>
         </div>
       </div>
@@ -138,7 +140,7 @@
 
   </section>
 
-
+  <!--PROJECTS SECTION-->
   <section class='projects'>
     <div class="card" style="width: 18rem;">
       <img src="..." class="card-img-top" alt="...">
@@ -162,6 +164,11 @@
 
 
 
+
+
+
+
+
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js"
     integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi"
     crossorigin="anonymous"></script>
@@ -169,6 +176,7 @@
     integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG"
     crossorigin="anonymous"></script>
   <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+  <!--POPOVER SCRIPT-->
   <script>
     var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
     var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
