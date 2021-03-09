@@ -53,3 +53,17 @@
 #skills-header {
   @include section-headers;
 }
+
+@media (max-width: $breakpoint-tablet) {
+  #skills--subheader {
+    color: white !important;
+    text-align: center;
+    font-size: 120% !important;
+  }
+}
+
+#skills--subheader {
+  color: white !important;
+  text-align: center;
+  font-size: 150%;
+}
