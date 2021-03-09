@@ -92,6 +92,15 @@ body {
   font-size: 150%;
 }
 
+.popover-body {
+  font-size: 1.5rem;
+}
+
+@media (max-width: 1024px) {
+  .popover-body {
+    font-size: 0.9rem;
+  }
+}
 .learn-more {
   text-align: center;
   margin-top: 1%;
@@ -205,8 +214,15 @@ body {
     font-size: 1.25rem;
   }
 }
+.skills .container {
+  display: flex !important;
+  background-image: url("/img/black-repeat.jpg");
+  background-repeat: repeat;
+}
+.skills .container .row {
+  margin-top: 0rem;
+}
 .skills .container .row .col {
-  background-image: url(/img/black-repeat.jpg);
   text-align: center;
   color: white !important;
 }
@@ -238,23 +254,22 @@ body {
 @media (max-width: 1024px) {
   div .row .col {
     padding-right: 0.5rem;
-    background-image: none !important;
-    margin-top: 2%;
+    margin-top: 1%;
   }
   div .row .col #html {
-    width: 65% !important;
+    width: 75% !important;
     height: 85% !important;
   }
   div .row .col #bs {
-    width: 65% !important;
+    width: 75% !important;
     height: 85% !important;
   }
   div .row .col #scss {
-    width: 65% !important;
+    width: 75% !important;
     height: 85% !important;
   }
   div .row .col #js {
-    width: 65% !important;
+    width: 75% !important;
     height: 85% !important;
   }
   div .row .col .btn.btn-secondary {
@@ -265,9 +280,10 @@ body {
   div .row .col .btn.btn-secondary::after {
     border: none;
   }
-
-  #descriptions .row .col {
-    padding-top: 0px;
+}
+@media (max-width: 1024px) {
+  .skills .container {
+    background-image: none !important;
   }
 }
 .projects {
