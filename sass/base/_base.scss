@@ -14,9 +14,8 @@ html {
 }
 
 body {
-  background-image: url("/img/black.jpg");
-  background-repeat: no-repeat;
-  background-size: auto;
+  background: url("/img/black.jpg") no-repeat fixed;
+
   box-sizing: border-box;
   height: auto;
   width: auto;

@@ -3,10 +3,10 @@
   margin-top: 1%;
   font-size: 2rem;
   a {
-    color: #45a29e;
-
+    color: $light-blue;
+    animation: fadein-btn 3s;
     &:hover {
-      opacity: 20%;
+      opacity: 50%;
       cursor: pointer;
     }
   }

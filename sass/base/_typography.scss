@@ -9,9 +9,27 @@
   }
   .heading-2 {
     color: white;
-    font-size: 2rem;
+    font-size: 3rem;
     margin-top: 0;
     text-align: center;
+  }
+}
+
+@media (max-width: $breakpoint-tablet) {
+  .header {
+    .heading-1 {
+      @include header-intro-font;
+      text-align: center;
+      color: $light-blue;
+      font-size: 1050%;
+      letter-spacing: 0.01em;
+    }
+    .heading-2 {
+      color: white;
+      font-size: 2rem;
+      margin-top: 0;
+      text-align: center;
+    }
   }
 }
 
@@ -65,7 +83,7 @@
 #skills--subheader {
   color: white;
   text-align: center;
-  font-size: 150%;
+  font-size: 2rem;
 }
 
 .popover-body {

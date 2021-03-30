@@ -1,3 +1,16 @@
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fadein-btn {
+  0% {
+    opacity: 0;
+  }
+}
 *,
 *::after,
 *::before {
@@ -13,9 +26,7 @@ html {
 }
 
 body {
-  background-image: url("/img/black.jpg");
-  background-repeat: no-repeat;
-  background-size: auto;
+  background: url("/img/black.jpg") no-repeat fixed;
   box-sizing: border-box;
   height: auto;
   width: auto;
@@ -31,11 +42,26 @@ body {
 }
 .header .heading-2 {
   color: white;
-  font-size: 2rem;
+  font-size: 3rem;
   margin-top: 0;
   text-align: center;
 }
 
+@media (max-width: 1024px) {
+  .header .heading-1 {
+    font-family: "Anton", sans-serif;
+    text-align: center;
+    color: #66fcf1;
+    font-size: 1050%;
+    letter-spacing: 0.01em;
+  }
+  .header .heading-2 {
+    color: white;
+    font-size: 2rem;
+    margin-top: 0;
+    text-align: center;
+  }
+}
 .navbar {
   font-size: 1.7rem;
 }
@@ -65,7 +91,7 @@ body {
   margin-top: 14%;
 }
 .about-me .about-me-container p {
-  font-size: 1.7rem;
+  font-size: 2rem;
   color: white;
   text-align: center;
   margin: 1% 15% 10% 15%;
@@ -89,7 +115,7 @@ body {
 #skills--subheader {
   color: white;
   text-align: center;
-  font-size: 150%;
+  font-size: 2rem;
 }
 
 .popover-body {
@@ -120,10 +146,11 @@ body {
   font-size: 2rem;
 }
 .learn-more a {
-  color: #45a29e;
+  color: #66fcf1;
+  animation: fadein-btn 3s;
 }
 .learn-more a:hover {
-  opacity: 20%;
+  opacity: 50%;
   cursor: pointer;
 }
 
@@ -146,26 +173,22 @@ body {
 .header {
   margin-top: 45vh;
 }
+.header .heading-2 .one {
+  animation: fadein 3s;
+  animation-delay: 0;
+}
+.header .heading-2 .two {
+  animation: fadein 5s;
+  animation-delay: 0;
+}
+.header .heading-2 .three {
+  animation: fadein 7s;
+  animation-delay: 0;
+}
 
 @media (max-width: 1024px) {
-  .header .heading-1 {
-    font-family: "Anton", sans-serif;
-    text-align: center;
-    color: #66fcf1;
-    font-size: 1050%;
-    margin-top: -40%;
-    letter-spacing: 0.01em;
-  }
-  .header .heading-2 {
-    color: white;
-    font-size: 1.5rem;
-    margin-top: 0;
-    text-align: center;
-  }
-}
-@media (max-width: 1024px) {
   .header {
-    margin-top: 25vh;
+    margin-top: 20rem;
   }
 }
 .navbar.navbar-expand-lg.navbar-light.bg-light .container-fluid .navbar-nav.margin-override {
@@ -226,10 +249,6 @@ body {
   .about-me #am p {
     font-size: 1.25rem;
   }
-}
-.skills#skills {
-  background-image: url("/img/black-repeat.jpg");
-  background-repeat: repeat;
 }
 .skills#skills .container {
   display: flex !important;
@@ -302,7 +321,6 @@ body {
   }
 }
 .projects {
-  background-image: url("/img/black-repeat.jpg");
   justify-content: center;
 }
 .projects #projects-header {
