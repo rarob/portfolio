@@ -329,6 +329,7 @@ body {
 }
 .projects {
   justify-content: center;
+  margin-bottom: 5%;
 }
 .projects #projects-header {
   text-align: center;
@@ -339,6 +340,7 @@ body {
   padding-top: 10rem;
 }
 .projects p {
+  font-size: 2rem;
   color: white;
   text-align: center;
 }
@@ -349,28 +351,50 @@ body {
 }
 .projects .card {
   width: 40rem;
+  max-height: 100rem;
+  min-height: 80rem;
   background-color: #1f2833;
   margin-right: 4rem;
   border-radius: 5%;
 }
-.projects .card:first-child {
-  margin-left: 2rem;
-}
-.projects .card:last-child {
-  margin-right: 2rem;
+.projects .card .skills-list {
+  color: white;
+  font-size: 1.5rem;
+  list-style-type: disc;
 }
 .projects .card img {
   border-radius: 20%;
 }
 .projects .card p {
   font-size: 1.5rem;
+  text-align: left;
 }
-.projects .card .btn.btn-primary {
-  font-weight: 400;
-  font-size: 1.4rem;
+.projects .card h5 {
   color: white;
-  background-color: #0b0c10;
+  font-size: 2rem;
+  font-weight: 1000;
+  text-align: center;
+}
+.projects .card hr {
+  color: white;
+}
+.projects .card #btn-container {
+  position: absolute;
+  top: 92%;
+}
+.projects .card #btn-container .btn.btn-primary {
+  font-weight: 400;
+  font-size: 1.5rem;
+  color: white;
+  background-color: black;
   border-color: #45a29e;
+}
+.projects .card #btn-container #btn-two {
+  background-color: #66fcf1;
+  color: black;
+  border-color: black;
+  border-width: 0.2rem;
+  margin-left: 0.5rem;
 }
 
 /*# sourceMappingURL=style.css.map */

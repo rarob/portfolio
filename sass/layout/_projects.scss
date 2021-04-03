@@ -1,10 +1,12 @@
 .projects {
   justify-content: center;
+  margin-bottom: 5%;
   #projects-header {
     @include section-headers;
     padding-top: 10rem;
   }
   p {
+    font-size: 2rem;
     color: white;
     text-align: center;
   }
@@ -15,27 +17,50 @@
   }
   .card {
     width: 40rem;
+    max-height: 100rem;
+    min-height: 80rem;
     background-color: #1f2833;
     margin-right: 4rem;
     border-radius: 5%;
-    &:first-child {
-      margin-left: 2rem;
+    .skills-list {
+      color: white;
+      font-size: 1.5rem;
+      list-style-type: disc;
     }
-    &:last-child {
-      margin-right: 2rem;
-    }
+
     img {
       border-radius: 20%;
     }
     p {
       font-size: 1.5rem;
+      text-align: left;
     }
-    .btn.btn-primary {
-      font-weight: 400;
-      font-size: 1.4rem;
+    h5 {
       color: white;
-      background-color: #0b0c10;
-      border-color: #45a29e;
+      font-size: 2rem;
+      font-weight: 1000;
+      text-align: center;
+    }
+    hr {
+      color: white;
+    }
+    #btn-container {
+      position: absolute;
+      top: 92%;
+      .btn.btn-primary {
+        font-weight: 400;
+        font-size: 1.5rem;
+        color: white;
+        background-color: black;
+        border-color: #45a29e;
+      }
+      #btn-two {
+        background-color: $light-blue;
+        color: black;
+        border-color: black;
+        border-width: 0.2rem;
+        margin-left: 0.5rem;
+      }
     }
   }
 }

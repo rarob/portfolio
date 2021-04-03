@@ -107,13 +107,6 @@
     </header>
   </main>
 
-
-
-
-
-
-
-
   <!--SKILLS SECTION-->
   <section class='skills' id='skills'>
     <h1 id='skills-header'>
@@ -143,7 +136,7 @@
         <div class="col">
           <button type="button" class="btn btn-secondary" data-bs-container="body" data-bs-toggle="popover"
             data-bs-placement="bottom"
-            data-bs-content="Responsive Design, Mobile-first, Mixins, Variables, Functions, Vendor Prefixes, 7-1 Structure">
+            data-bs-content="Responsive Design, Mobile-first, Mixins, Variables, Functions, Vendor Prefixes, 7-1 File Structure">
             <img id='scss' src='/img/scss.png' alt="SCSS">
           </button>
         </div>
@@ -168,60 +161,142 @@
     <h1 id='projects-header'>
       <b>My Projects</b>
     </h1>
-    <p>Tap or click the images on top of each card to visit the live project hosted on GitHub Pages, blue button at the
-      bottom to see the GitHub repository </p>
+    <p>
+      Click "See Project Live" button to see the functional project hosted on GitHub Pages, click "Repository"
+      button to
+      see the repository itself. </p>
+
     <div class='card-holder'>
 
-
-
+      <!--1st Project-->
       <div class="card">
         <a href='...'>
           <img src="..." class="card-img-top" alt="...">
         </a>
         <div class="card-body">
           <h5 class="card-title">Card title</h5>
-          <p class="card-text">900x900 image here</p>
-          <a href="#" class="btn btn-primary">See Project Live</a>
+          <hr>
+          <p class="card-text">900x900 image here
+            <br>
+            <br>
+            <b><i>SKILLS:</i></b>
+          <div id='list-container'>
+
+            <ul class='skills-list'>
+              <li>HTML</li>
+              <li>Javascript</li>
+              <li>Bootstrap</li>
+              <li>3rd Party API</li>
+            </ul>
+          </div>
+          </p>
+
+          <div id='btn-container'>
+            <a href="#" class="btn btn-primary">See Project Live</a>
+            <a href="#" id='btn-two' class="btn btn-primary">Repository</a>
+          </div>
         </div>
       </div>
 
+      <!--Weather App-->
       <div class="card">
         <a href='https://rarob.github.io/weather.io/'>
           <img src="/img/weather.jpg" class="card-img-top" alt="...">
         </a>
         <div class="card-body">
           <h5 class="card-title">Weather App</h5>
-          <p class="card-text"> A simple weather web app that recieves user location via .</p>
-          <a href="#" class="btn btn-primary">See Repository</a>
+          <hr>
+          <p class="card-text"> A local weather web app that utilizes OpenWeatherMap RESTful API to recieve current
+            weather data of an area by zipcode or automatically through JS Geolocation API. Returns weather data with
+            matching icon based on the weather data that's recieved.<br>
+            <br>
+            <b><i>SKILLS:</i></b>
+          <div id='list-container'>
+
+            <ul class='skills-list'>
+              <li>HTML</li>
+              <li>Javascript</li>
+              <li>Bootstrap</li>
+              <li>RESTful API integration</li>
+
+            </ul>
+          </div>
+
+          <div id='btn-container'>
+            <a href="#" class="btn btn-primary">See Project Live</a>
+            <a href="#" id='btn-two' class="btn btn-primary">Repository</a>
+          </div>
         </div>
       </div>
 
+      <!--Tetris-->
       <div class="card">
         <a href='https://rarob.github.io/tetris/'>
           <img src="/img/tetris.jpg" class="card-img-top" alt="...">
         </a>
         <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-            content.</p>
-          <a href="#" class="btn btn-primary">See Project Live</a>
+          <h5 class="card-title">Tetris</h5>
+          <hr>
+          <p class="card-text">Classic Tetris that utilizes JS matrices to
+            generate the 5 Tetris game pieces, draws them onto the HTML
+            canvas element, and tracks current score. Use Q to rotate counter-clockwise, E to rotate clockwise, and down
+            arrow key to speed falling speed.
+            <br>
+            <br>
+            <b><i>SKILLS:</i></b>
+          <div id='list-container'>
+
+            <ul class='skills-list'>
+              <li>HTML</li>
+              <li>Javascript</li>
+              <li>JS States</li>
+              <li>CSS</li>
+            </ul>
+          </div>
+          </p>
+
+          <div id='btn-container'>
+            <a href="#" class="btn btn-primary">See Project Live</a>
+            <a href="#" id='btn-two' class="btn btn-primary">Repository</a>
+          </div>
         </div>
       </div>
 
+      <!--Board Shop-->
       <div class="card">
         <a href='https://rarob.github.io/longboard-shop-mockup/longboard-store.html'>
           <img src="/img/board-shop.png" class="card-img-top" alt="...">
         </a>
         <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-            content.</p>
-          <a href="#" class="btn btn-primary">See Project Live</a>
+          <h5 class="card-title">Landing Page Mock-up</h5>
+          <hr>
+          <p class="card-text">Mockup E-Commerce landing page modeled after Magneto longboards website. The sole purpose
+            of this project is to serve as a landing/home page. Uses SlickJS component library and Bootstrap to create
+            an appealing and user-friendly layout.
+            <br>
+            <br>
+            <b><i>SKILLS:</i></b>
+          <div id='list-container'>
+
+            <ul class='skills-list'>
+              <li>HTML</li>
+              <li>Javascript</li>
+              <li>Bootstrap</li>
+              <li>SCSS</li>
+            </ul>
+          </div>
+          </p>
+
+          <div id='btn-container'>
+            <a href="#" class="btn btn-primary">See Project Live</a>
+            <a href="#" id='btn-two' class="btn btn-primary">Repository</a>
+          </div>
         </div>
       </div>
 
     </div>
   </section>
+
 
 
 
