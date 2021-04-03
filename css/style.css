@@ -140,18 +140,30 @@ body {
   font-size: 150%;
 }
 
-.learn-more {
+.btn-container {
   text-align: center;
-  margin-top: 1%;
-  font-size: 2rem;
+  margin: 2% 0 12% 0;
 }
-.learn-more a {
-  color: #66fcf1;
-  animation: fadein-btn 3s;
+.btn-container .btn.btn-primary {
+  font-size: 1.4rem;
+  background-color: black;
+  border-color: #66fcf1;
 }
-.learn-more a:hover {
-  opacity: 50%;
-  cursor: pointer;
+.btn-container #collapse {
+  background-color: transparent !important;
+}
+.btn-container #collapse .card.card-body {
+  background-color: transparent;
+}
+.btn-container #collapse .card.card-body .about-me .about-me-container {
+  font-weight: 600;
+  height: auto;
+  display: flex;
+  justify-content: center;
+}
+.btn-container #collapse .card.card-body .about-me .about-me-container #about-me-p {
+  width: 50%;
+  background-color: rgba(17, 17, 17, 0.781);
 }
 
 .grid-container {
@@ -171,7 +183,7 @@ body {
 }
 
 .header {
-  margin-top: 45vh;
+  margin-top: 40vh;
 }
 .header .heading-2 .one {
   animation: fadein 3s;
@@ -245,11 +257,6 @@ body {
   background: transparent;
 }
 
-@media (max-width: 1024px) {
-  .about-me #am p {
-    font-size: 1.25rem;
-  }
-}
 .skills#skills .container {
   display: flex !important;
 }
