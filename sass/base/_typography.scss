@@ -38,6 +38,12 @@
   a {
     color: white !important;
   }
+  #content {
+    &:hover {
+      color: $light-blue !important;
+      font-size: 1.5rem;
+    }
+  }
 
   .navbar-brand {
     font-size: 3rem;

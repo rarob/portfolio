@@ -26,6 +26,9 @@
       color: white;
       font-size: 1.5rem;
       list-style-type: disc;
+      #inv {
+        color: transparent;
+      }
     }
 
     img {
@@ -45,14 +48,18 @@
       color: white;
     }
     #btn-container {
-      position: absolute;
-      top: 92%;
+      display: flex;
+      justify-content: center;
+
       .btn.btn-primary {
         font-weight: 400;
         font-size: 1.5rem;
         color: white;
         background-color: black;
         border-color: #45a29e;
+        &:hover {
+          font-size: 1.6rem;
+        }
       }
       #btn-two {
         background-color: $light-blue;

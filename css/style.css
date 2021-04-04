@@ -26,7 +26,7 @@ html {
 }
 
 body {
-  background: url("/img/black.jpg") no-repeat fixed;
+  background: url("../img/black.jpg") no-repeat fixed;
   box-sizing: border-box;
   height: auto;
   width: auto;
@@ -67,6 +67,10 @@ body {
 }
 .navbar a {
   color: white !important;
+}
+.navbar #content:hover {
+  color: #66fcf1 !important;
+  font-size: 1.5rem;
 }
 .navbar .navbar-brand {
   font-size: 3rem;
@@ -362,6 +366,9 @@ body {
   font-size: 1.5rem;
   list-style-type: disc;
 }
+.projects .card .skills-list #inv {
+  color: transparent;
+}
 .projects .card img {
   border-radius: 20%;
 }
@@ -379,8 +386,8 @@ body {
   color: white;
 }
 .projects .card #btn-container {
-  position: absolute;
-  top: 92%;
+  display: flex;
+  justify-content: center;
 }
 .projects .card #btn-container .btn.btn-primary {
   font-weight: 400;
@@ -388,6 +395,9 @@ body {
   color: white;
   background-color: black;
   border-color: #45a29e;
+}
+.projects .card #btn-container .btn.btn-primary:hover {
+  font-size: 1.6rem;
 }
 .projects .card #btn-container #btn-two {
   background-color: #66fcf1;
