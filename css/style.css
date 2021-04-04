@@ -233,6 +233,10 @@ body {
   border: none;
   width: 115%;
 }
+.navbar.navbar-expand-lg.navbar-light.bg-light .container-fluid .icon-navbar li #contact #contact-link {
+  color: #66fcf1 !important;
+  text-decoration: none;
+}
 .navbar.navbar-expand-lg.navbar-light.bg-light .container-fluid .icon-navbar li ion-icon {
   color: white;
   margin-top: 50%;

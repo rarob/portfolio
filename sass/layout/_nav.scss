@@ -17,6 +17,7 @@
       list-style: none;
       li {
         padding-right: 20%;
+
         #contact {
           color: $light-blue;
           background-color: transparent;
@@ -24,6 +25,10 @@
           border-radius: 30%;
           border: none;
           width: 115%;
+          #contact-link {
+            color: $light-blue !important;
+            text-decoration: none;
+          }
         }
         ion-icon {
           color: white;
@@ -31,6 +36,7 @@
         }
       }
     }
+
     @media (max-width: $breakpoint-tablet) {
       ion-icon {
         display: none;
