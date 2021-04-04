@@ -254,7 +254,7 @@ body {
 }
 
 .navbar.transparent.navbar-expand-lg.navbar-light.bg-light {
-  background-image: url("/img/black.jpg");
+  background-image: url("../img/black.jpg");
 }
 
 .navbar-inner {
