@@ -19,4 +19,23 @@
 }
 
 @media (max-width: $breakpoint-tablet) {
+  .btn-container {
+    text-align: center;
+    margin: 2% 0 12% 0;
+    .btn.btn-primary {
+      font-size: 1.4rem;
+      background-color: black;
+      border-color: $light-blue;
+    }
+    #collapse {
+      .card.card-body {
+        .about-me {
+          .about-me-container {
+            #about-me-p {
+            }
+          }
+        }
+      }
+    }
+  }
 }

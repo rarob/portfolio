@@ -15,24 +15,6 @@
   }
 }
 
-@media (max-width: $breakpoint-tablet) {
-  .header {
-    .heading-1 {
-      @include header-intro-font;
-      text-align: center;
-      color: $light-blue;
-      font-size: 1050%;
-      letter-spacing: 0.01em;
-    }
-    .heading-2 {
-      color: white;
-      font-size: 2rem;
-      margin-top: 0;
-      text-align: center;
-    }
-  }
-}
-
 .navbar {
   font-size: 1.7rem;
   a {
@@ -44,23 +26,9 @@
       font-size: 1.5rem;
     }
   }
-
   .navbar-brand {
     font-size: 3rem;
     color: white;
-  }
-}
-
-@media (max-width: $breakpoint-tablet) {
-  .navbar.navbar-expand-lg.navbar-light.bg-light {
-    .container-fluid {
-      .navbar-brand {
-        font-size: 2rem;
-      }
-    }
-  }
-  #contact {
-    font-size: 1.5rem;
   }
 }
 
@@ -82,29 +50,13 @@
 #skills-header {
   @include section-headers;
 }
-
-@media (max-width: $breakpoint-tablet) {
-  #skills--subheader {
-    color: white !important;
-    text-align: center;
-    font-size: 120% !important;
-  }
-}
-
 #skills--subheader {
   color: white;
   text-align: center;
   font-size: 2rem;
 }
-
 .popover-body {
   font-size: 1.5rem;
-}
-
-@media (max-width: $breakpoint-tablet) {
-  .popover-body {
-    font-size: 0.9rem;
-  }
 }
 
 //PROJECTS
@@ -118,5 +70,49 @@
     font-size: 150%;
   }
 }
+
 @media (max-width: $breakpoint-tablet) {
+  .navbar.navbar-expand-lg.navbar-light.bg-light {
+    .container-fluid {
+      .navbar-brand {
+        font-size: 2rem;
+      }
+    }
+  }
+  #contact {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: $breakpoint-tablet) {
+  .popover-body {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: $breakpoint-tablet) {
+  #skills--subheader {
+    color: white !important;
+    text-align: center;
+    font-size: 1.5rem;
+    margin: 0 5rem 0 5rem;
+  }
+}
+
+@media (max-width: $breakpoint-tablet) {
+  .header {
+    .heading-1 {
+      @include header-intro-font;
+      text-align: center;
+      color: $light-blue;
+      font-size: 1050%;
+      letter-spacing: 0.01em;
+    }
+    .heading-2 {
+      color: white;
+      font-size: 2rem;
+      margin-top: 0;
+      text-align: center;
+    }
+  }
 }
