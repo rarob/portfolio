@@ -66,6 +66,11 @@
 
 .about-me {
   .about-me-container {
+    display: flex;
+    justify-content: center;
+    #about-me-p {
+      margin: 0;
+    }
     h2 {
       @include section-headers;
       margin-top: 14%;

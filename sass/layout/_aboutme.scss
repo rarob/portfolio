@@ -1,3 +1,37 @@
+.btn-container {
+  #collapse {
+    background-color: transparent !important;
+    .card.card-body {
+      background-color: transparent;
 
+      .about-me {
+        #img-container {
+          #me {
+            width: 15rem;
+            height: 17rem;
+            margin-bottom: 2rem;
+            border-radius: 50%;
+            border-width: 0.3rem;
+            border-style: solid;
+            border-color: $light-blue;
+          }
+        }
+        .about-me-container {
+          font-weight: 600;
+          height: auto;
+          display: flex;
+          justify-content: center;
 
+          #about-me-p {
+            text-align: center;
+            width: 50%;
+            background-color: rgba(17, 17, 17, 0.781);
+          }
+        }
+      }
+    }
+  }
+}
 
+@media (max-width: $breakpoint-tablet) {
+}

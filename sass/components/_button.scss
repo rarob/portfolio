@@ -7,20 +7,10 @@
     border-color: $light-blue;
   }
   #collapse {
-    background-color: transparent !important;
     .card.card-body {
-      background-color: transparent;
-
       .about-me {
         .about-me-container {
-          font-weight: 600;
-          height: auto;
-          display: flex;
-          justify-content: center;
-
           #about-me-p {
-            width: 50%;
-            background-color: rgba(17, 17, 17, 0.781);
           }
         }
       }

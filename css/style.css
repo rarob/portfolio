@@ -86,6 +86,13 @@ body {
     font-size: 1.5rem;
   }
 }
+.about-me .about-me-container {
+  display: flex;
+  justify-content: center;
+}
+.about-me .about-me-container #about-me-p {
+  margin: 0;
+}
 .about-me .about-me-container h2 {
   text-align: center;
   text-decoration: none;
@@ -153,23 +160,6 @@ body {
   background-color: black;
   border-color: #66fcf1;
 }
-.btn-container #collapse {
-  background-color: transparent !important;
-}
-.btn-container #collapse .card.card-body {
-  background-color: transparent;
-}
-.btn-container #collapse .card.card-body .about-me .about-me-container {
-  font-weight: 600;
-  height: auto;
-  display: flex;
-  justify-content: center;
-}
-.btn-container #collapse .card.card-body .about-me .about-me-container #about-me-p {
-  width: 50%;
-  background-color: rgba(17, 17, 17, 0.781);
-}
-
 .grid-container {
   display: none;
   grid-template-columns: auto auto auto;
@@ -263,6 +253,33 @@ body {
 
 .navbar-inner {
   background: transparent;
+}
+
+.btn-container #collapse {
+  background-color: transparent !important;
+}
+.btn-container #collapse .card.card-body {
+  background-color: transparent;
+}
+.btn-container #collapse .card.card-body .about-me #img-container #me {
+  width: 15rem;
+  height: 17rem;
+  margin-bottom: 2rem;
+  border-radius: 50%;
+  border-width: 0.3rem;
+  border-style: solid;
+  border-color: #66fcf1;
+}
+.btn-container #collapse .card.card-body .about-me .about-me-container {
+  font-weight: 600;
+  height: auto;
+  display: flex;
+  justify-content: center;
+}
+.btn-container #collapse .card.card-body .about-me .about-me-container #about-me-p {
+  text-align: center;
+  width: 50%;
+  background-color: rgba(17, 17, 17, 0.781);
 }
 
 .skills#skills .container {
