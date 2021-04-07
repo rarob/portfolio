@@ -1,34 +1,35 @@
 .skills#skills {
   .container {
-    display: flex !important;
+    display: flex;
 
     .row {
-      margin-top: 0rem;
+      margin-top: 2rem;
 
       .col {
         text-align: center;
-        color: white !important;
+        color: white;
 
         #html {
-          width: 55%;
-          height: 75%;
+          width: 65%;
+          height: 85%;
         }
         #bs {
-          width: 55%;
-          height: 75%;
+          width: 65%;
+          height: 85%;
         }
         #scss {
-          width: 55%;
-          height: 75%;
+          width: 65%;
+          height: 85%;
         }
         #js {
-          width: 55%;
-          height: 75%;
+          width: 65%;
+          height: 85%;
         }
         .btn.btn-secondary {
           background-color: transparent;
           border: none;
           padding: 0;
+
           &::after {
             border: none;
           }
@@ -38,41 +39,5 @@
   }
 }
 
-@media (max-width: $breakpoint-tablet) {
-  .skills {
-    .container {
-      background-image: none !important;
-
-      div.row.col {
-        padding-right: 0.5rem;
-
-        margin-top: 1%;
-
-        #html {
-          width: 75% !important;
-          height: 85% !important;
-        }
-        #bs {
-          width: 75% !important;
-          height: 85% !important;
-        }
-        #scss {
-          width: 75% !important;
-          height: 85% !important;
-        }
-        #js {
-          width: 75% !important;
-          height: 85% !important;
-        }
-        .btn.btn-secondary {
-          background-color: transparent;
-          border: none;
-          padding: 0;
-          &::after {
-            border: none;
-          }
-        }
-      }
-    }
-  }
+@media screen only and (max-width: $breakpoint-tablet) {
 }

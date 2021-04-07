@@ -440,30 +440,30 @@ body {
   }
 }
 .skills#skills .container {
-  display: flex !important;
+  display: flex;
 }
 .skills#skills .container .row {
-  margin-top: 0rem;
+  margin-top: 2rem;
 }
 .skills#skills .container .row .col {
   text-align: center;
-  color: white !important;
+  color: white;
 }
 .skills#skills .container .row .col #html {
-  width: 55%;
-  height: 75%;
+  width: 65%;
+  height: 85%;
 }
 .skills#skills .container .row .col #bs {
-  width: 55%;
-  height: 75%;
+  width: 65%;
+  height: 85%;
 }
 .skills#skills .container .row .col #scss {
-  width: 55%;
-  height: 75%;
+  width: 65%;
+  height: 85%;
 }
 .skills#skills .container .row .col #js {
-  width: 55%;
-  height: 75%;
+  width: 65%;
+  height: 85%;
 }
 .skills#skills .container .row .col .btn.btn-secondary {
   background-color: transparent;
@@ -474,39 +474,6 @@ body {
   border: none;
 }
 
-@media (max-width: 1024px) {
-  .skills .container {
-    background-image: none !important;
-  }
-  .skills .container div.row.col {
-    padding-right: 0.5rem;
-    margin-top: 1%;
-  }
-  .skills .container div.row.col #html {
-    width: 75% !important;
-    height: 85% !important;
-  }
-  .skills .container div.row.col #bs {
-    width: 75% !important;
-    height: 85% !important;
-  }
-  .skills .container div.row.col #scss {
-    width: 75% !important;
-    height: 85% !important;
-  }
-  .skills .container div.row.col #js {
-    width: 75% !important;
-    height: 85% !important;
-  }
-  .skills .container div.row.col .btn.btn-secondary {
-    background-color: transparent;
-    border: none;
-    padding: 0;
-  }
-  .skills .container div.row.col .btn.btn-secondary::after {
-    border: none;
-  }
-}
 .projects {
   justify-content: center;
   margin-bottom: 5%;
