@@ -5,73 +5,77 @@
     @include section-headers;
     padding-top: 10rem;
   }
-  p {
-    font-size: 2rem;
-    color: white;
-    text-align: center;
-  }
-  .card-holder {
+
+  .card-container {
     display: flex;
     justify-content: center;
-    padding-top: 1%;
-  }
-  .card {
-    width: 40rem;
-    max-height: 100rem;
-    min-height: 80rem;
-    background-color: #1f2833;
-    margin-right: 4rem;
-    border-radius: 5%;
-    .skills-list {
-      color: white;
-      font-size: 1.5rem;
-      list-style-type: disc;
-      #inv {
-        color: transparent;
+    padding-top: 1vh;
+    .spacer-left {
+      margin-left: 1vw;
+      margin-right: 0.5vw;
+    }
+    .spacer-right {
+      margin-left: 0.5vw;
+      margin-right: 1vw;
+    }
+    .card {
+      width: 45rem;
+      background-color: #1f2833;
+      border-radius: 5%;
+      img.card-img-top {
+        border-radius: 20%;
       }
-    }
-
-    img.card-img-top {
-      border-radius: 20%;
-    }
-    p {
-      font-size: 1.5rem;
-      text-align: left;
-    }
-    h5 {
-      color: white;
-      font-size: 2rem;
-      font-weight: 1000;
-      text-align: center;
-    }
-    hr {
-      color: white;
-    }
-    #btn-container {
-      display: flex;
-      justify-content: center;
-
-      .btn.btn-primary {
-        font-weight: 400;
-        font-size: 1.5rem;
-        color: white;
-        background-color: black;
-        border-color: #45a29e;
-        &:hover {
-          font-size: 1.6rem;
+      .card-body {
+        h5.card-title {
+          color: white;
+          font-size: 3rem;
+          font-weight: 1000;
+          text-align: center;
         }
-      }
-      #btn-two {
-        background-color: $light-blue;
-        color: black;
-        border-color: black;
-        border-width: 0.2rem;
-        margin-left: 0.5rem;
+        hr {
+          color: white;
+        }
+        p.card-text {
+          font-size: 1.5rem;
+          color: white;
+          text-align: left;
+        }
+        .skills-list {
+          color: white;
+          font-size: 1.5rem;
+          list-style-type: disc;
+          #inv {
+            color: transparent;
+          }
+        }
+
+        #btn-container {
+          display: flex;
+          justify-content: center;
+
+          .btn.btn-primary {
+            font-weight: 400;
+            font-size: 1.5rem;
+            color: white;
+            background-color: black;
+            border-color: #45a29e;
+            &:hover {
+              font-size: 1.6rem;
+            }
+          }
+          #btn-two {
+            background-color: $light-blue;
+            color: black;
+            border-color: black;
+            border-width: 0.2rem;
+            margin-left: 0.5rem;
+          }
+        }
       }
     }
   }
 }
-
+/*
 @media only screen and (max-width: $breakpoint-tablet) {
   .projects {
     justify-content: center;
@@ -233,3 +237,4 @@
     }
   }
 }
+*/

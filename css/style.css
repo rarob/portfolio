@@ -71,8 +71,6 @@ body {
 }
 .about-me .about-me-container h2 {
   text-align: center;
-  text-decoration: none;
-  margin-left: 1%;
   color: #66fcf1;
   font-size: 5rem;
   margin-top: 14%;
@@ -86,8 +84,6 @@ body {
 
 #skills-header {
   text-align: center;
-  text-decoration: none;
-  margin-left: 1%;
   color: #66fcf1;
   font-size: 5rem;
 }
@@ -99,13 +95,11 @@ body {
 }
 
 .popover-body {
-  font-size: 1.5rem;
+  font-size: 1.7rem;
 }
 
 .projects #projects-header {
   text-align: center;
-  text-decoration: none;
-  margin-left: 1%;
   color: #66fcf1;
   font-size: 5rem;
 }
@@ -119,25 +113,10 @@ body {
   .navbar.navbar-expand-lg.navbar-light.bg-light .container-fluid .navbar-brand {
     font-size: 2rem;
   }
+  .navbar.navbar-expand-lg.navbar-light.bg-light .container-fluid #contact {
+    font-size: 1.5rem;
+  }
 
-  #contact {
-    font-size: 1.5rem;
-  }
-}
-@media (max-width: 1024px) {
-  .popover-body {
-    font-size: 0.9rem;
-  }
-}
-@media (max-width: 1024px) {
-  #skills--subheader {
-    color: white !important;
-    text-align: center;
-    font-size: 1.5rem;
-    margin: 0 5rem 0 5rem;
-  }
-}
-@media (max-width: 1024px) {
   .header .heading-1 {
     font-family: "Anton", sans-serif;
     text-align: center;
@@ -150,6 +129,17 @@ body {
     font-size: 2rem;
     margin-top: 0;
     text-align: center;
+  }
+
+  #skills--subheader {
+    color: white !important;
+    text-align: center;
+    font-size: 1.5rem;
+    margin: 0 5rem 0 5rem;
+  }
+
+  .popover-body {
+    font-size: 0.9rem;
   }
 }
 .btn-container {
@@ -480,69 +470,68 @@ body {
 }
 .projects #projects-header {
   text-align: center;
-  text-decoration: none;
-  margin-left: 1%;
   color: #66fcf1;
   font-size: 5rem;
   padding-top: 10rem;
 }
-.projects p {
-  font-size: 2rem;
-  color: white;
-  text-align: center;
-}
-.projects .card-holder {
+.projects .card-container {
   display: flex;
   justify-content: center;
-  padding-top: 1%;
+  padding-top: 1vh;
 }
-.projects .card {
-  width: 40rem;
-  max-height: 100rem;
-  min-height: 80rem;
+.projects .card-container .spacer-left {
+  margin-left: 1vw;
+  margin-right: 0.5vw;
+}
+.projects .card-container .spacer-right {
+  margin-left: 0.5vw;
+  margin-right: 1vw;
+}
+.projects .card-container .card {
+  width: 45rem;
   background-color: #1f2833;
-  margin-right: 4rem;
   border-radius: 5%;
 }
-.projects .card .skills-list {
+.projects .card-container .card img.card-img-top {
+  border-radius: 20%;
+}
+.projects .card-container .card .card-body h5.card-title {
+  color: white;
+  font-size: 3rem;
+  font-weight: 1000;
+  text-align: center;
+}
+.projects .card-container .card .card-body hr {
+  color: white;
+}
+.projects .card-container .card .card-body p.card-text {
+  font-size: 1.5rem;
+  color: white;
+  text-align: left;
+}
+.projects .card-container .card .card-body .skills-list {
   color: white;
   font-size: 1.5rem;
   list-style-type: disc;
 }
-.projects .card .skills-list #inv {
+.projects .card-container .card .card-body .skills-list #inv {
   color: transparent;
 }
-.projects .card img.card-img-top {
-  border-radius: 20%;
-}
-.projects .card p {
-  font-size: 1.5rem;
-  text-align: left;
-}
-.projects .card h5 {
-  color: white;
-  font-size: 2rem;
-  font-weight: 1000;
-  text-align: center;
-}
-.projects .card hr {
-  color: white;
-}
-.projects .card #btn-container {
+.projects .card-container .card .card-body #btn-container {
   display: flex;
   justify-content: center;
 }
-.projects .card #btn-container .btn.btn-primary {
+.projects .card-container .card .card-body #btn-container .btn.btn-primary {
   font-weight: 400;
   font-size: 1.5rem;
   color: white;
   background-color: black;
   border-color: #45a29e;
 }
-.projects .card #btn-container .btn.btn-primary:hover {
+.projects .card-container .card .card-body #btn-container .btn.btn-primary:hover {
   font-size: 1.6rem;
 }
-.projects .card #btn-container #btn-two {
+.projects .card-container .card .card-body #btn-container #btn-two {
   background-color: #66fcf1;
   color: black;
   border-color: black;
@@ -550,161 +539,168 @@ body {
   margin-left: 0.5rem;
 }
 
-@media only screen and (max-width: 1024px) {
+/*
+@media only screen and (max-width: $breakpoint-tablet) {
   .projects {
     justify-content: center;
     margin-bottom: 5%;
-  }
-  .projects #projects-header {
-    text-align: center;
-    text-decoration: none;
-    margin-left: 1%;
-    color: #66fcf1;
-    font-size: 5rem;
-    padding-top: 10rem;
-  }
-  .projects .card-holder {
-    display: block;
-    justify-content: center;
-    padding-top: 1%;
-  }
-  .projects .card {
-    width: auto;
-    height: auto;
-    background-color: #1f2833;
-    margin: 0 !important;
-    border-radius: 5%;
-    border-style: solid;
-    border-color: black;
-    border-width: 1.5rem;
-  }
-  .projects .card .skills-list {
-    color: white;
-    font-size: 1.5rem;
-    list-style-type: disc;
-  }
-  .projects .card .skills-list #inv {
-    color: transparent;
-  }
-  .projects .card img.card-img-top {
-    margin-top: 1rem;
-    margin-left: 25%;
-    border-radius: 20%;
-    height: 30rem;
-    width: 30rem;
-  }
-  .projects .card p {
-    font-size: 1.5rem;
-    text-align: left;
-  }
-  .projects .card h5 {
-    color: white;
-    font-size: 2rem;
-    font-weight: 1000;
-    text-align: center;
-  }
-  .projects .card hr {
-    color: white;
-  }
-  .projects .card #btn-container {
-    display: flex;
-    justify-content: center;
-    margin: 0 !important;
-  }
-  .projects .card #btn-container .btn.btn-primary {
-    font-weight: 400;
-    font-size: 1.5rem;
-    color: white;
-    background-color: black;
-    border-color: #45a29e;
-  }
-  .projects .card #btn-container .btn.btn-primary:hover {
-    font-size: 1.6rem;
-  }
-  .projects .card #btn-container #btn-two {
-    background-color: #66fcf1;
-    color: black;
-    border-color: black;
-    border-width: 0.2rem;
+    #projects-header {
+      @include section-headers;
+
+      padding-top: 10rem;
+    }
+
+    .card-holder {
+      display: block;
+
+      justify-content: center;
+      padding-top: 1%;
+    }
+    .card {
+      width: auto;
+      height: auto;
+
+      background-color: #1f2833;
+      margin: 0 !important;
+      border-radius: 5%;
+      border-style: solid;
+      border-color: black;
+      border-width: 1.5rem;
+
+      .skills-list {
+        color: white;
+        font-size: 1.5rem;
+        list-style-type: disc;
+        #inv {
+          color: transparent;
+        }
+      }
+
+      img.card-img-top {
+        margin-top: 1rem;
+        margin-left: 25%;
+        border-radius: 20%;
+        height: 30rem;
+        width: 30rem;
+      }
+      p {
+        font-size: 1.5rem;
+        text-align: left;
+      }
+      h5 {
+        color: white;
+        font-size: 2rem;
+        font-weight: 1000;
+        text-align: center;
+      }
+      hr {
+        color: white;
+      }
+      #btn-container {
+        display: flex;
+        justify-content: center;
+        margin: 0 !important;
+        .btn.btn-primary {
+          font-weight: 400;
+          font-size: 1.5rem;
+          color: white;
+          background-color: black;
+          border-color: #45a29e;
+          &:hover {
+            font-size: 1.6rem;
+          }
+        }
+        #btn-two {
+          background-color: $light-blue;
+          color: black;
+          border-color: black;
+          border-width: 0.2rem;
+        }
+      }
+    }
   }
 }
-@media only screen and (max-width: 800px) {
+
+@media only screen and (max-width: $breakpoint-mobile) {
   .projects {
     justify-content: center;
     margin-bottom: 5%;
-  }
-  .projects #projects-header {
-    text-align: center;
-    text-decoration: none;
-    margin-left: 1%;
-    color: #66fcf1;
-    font-size: 5rem;
-    padding-top: 10rem;
-  }
-  .projects .card-holder {
-    display: block;
-    justify-content: center;
-    padding-top: 1%;
-  }
-  .projects .card {
-    width: auto;
-    height: auto;
-    background-color: #1f2833;
-    margin: 0 !important;
-    border-radius: 5%;
-    border-style: solid;
-    border-color: black;
-    border-width: 1.5rem;
-  }
-  .projects .card .skills-list {
-    color: white;
-    font-size: 1.5rem;
-    list-style-type: disc;
-  }
-  .projects .card .skills-list #inv {
-    color: transparent;
-  }
-  .projects .card img.card-img-top {
-    margin-top: 1rem;
-    margin-left: 7%;
-    border-radius: 20%;
-    height: 30rem;
-    width: 30rem;
-  }
-  .projects .card p {
-    font-size: 1.5rem;
-    text-align: left;
-  }
-  .projects .card h5 {
-    color: white;
-    font-size: 2rem;
-    font-weight: 1000;
-    text-align: center;
-  }
-  .projects .card hr {
-    color: white;
-  }
-  .projects .card #btn-container {
-    display: flex;
-    justify-content: center;
-    margin: 0 !important;
-  }
-  .projects .card #btn-container .btn.btn-primary {
-    font-weight: 400;
-    font-size: 1.5rem;
-    color: white;
-    background-color: black;
-    border-color: #45a29e;
-  }
-  .projects .card #btn-container .btn.btn-primary:hover {
-    font-size: 1.6rem;
-  }
-  .projects .card #btn-container #btn-two {
-    background-color: #66fcf1;
-    color: black;
-    border-color: black;
-    border-width: 0.2rem;
+    #projects-header {
+      @include section-headers;
+
+      padding-top: 10rem;
+    }
+
+    .card-holder {
+      display: block;
+
+      justify-content: center;
+      padding-top: 1%;
+    }
+    .card {
+      width: auto;
+      height: auto;
+
+      background-color: #1f2833;
+      margin: 0 !important;
+      border-radius: 5%;
+      border-style: solid;
+      border-color: black;
+      border-width: 1.5rem;
+
+      .skills-list {
+        color: white;
+        font-size: 1.5rem;
+        list-style-type: disc;
+        #inv {
+          color: transparent;
+        }
+      }
+
+      img.card-img-top {
+        margin-top: 1rem;
+        margin-left: 7%;
+        border-radius: 20%;
+        height: 30rem;
+        width: 30rem;
+      }
+      p {
+        font-size: 1.5rem;
+        text-align: left;
+      }
+      h5 {
+        color: white;
+        font-size: 2rem;
+        font-weight: 1000;
+        text-align: center;
+      }
+      hr {
+        color: white;
+      }
+      #btn-container {
+        display: flex;
+        justify-content: center;
+        margin: 0 !important;
+        .btn.btn-primary {
+          font-weight: 400;
+          font-size: 1.5rem;
+          color: white;
+          background-color: black;
+          border-color: #45a29e;
+          &:hover {
+            font-size: 1.6rem;
+          }
+        }
+        #btn-two {
+          background-color: $light-blue;
+          color: black;
+          border-color: black;
+          border-width: 0.2rem;
+        }
+      }
+    }
   }
 }
+*/
 
 /*# sourceMappingURL=style.css.map */

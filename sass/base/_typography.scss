@@ -56,7 +56,7 @@
   font-size: 2rem;
 }
 .popover-body {
-  font-size: 1.5rem;
+  font-size: 1.7rem;
 }
 
 //PROJECTS
@@ -77,29 +77,12 @@
       .navbar-brand {
         font-size: 2rem;
       }
+      #contact {
+        font-size: 1.5rem;
+      }
     }
   }
-  #contact {
-    font-size: 1.5rem;
-  }
-}
 
-@media (max-width: $breakpoint-tablet) {
-  .popover-body {
-    font-size: 0.9rem;
-  }
-}
-
-@media (max-width: $breakpoint-tablet) {
-  #skills--subheader {
-    color: white !important;
-    text-align: center;
-    font-size: 1.5rem;
-    margin: 0 5rem 0 5rem;
-  }
-}
-
-@media (max-width: $breakpoint-tablet) {
   .header {
     .heading-1 {
       @include header-intro-font;
@@ -114,5 +97,16 @@
       margin-top: 0;
       text-align: center;
     }
+  }
+
+  #skills--subheader {
+    color: white !important;
+    text-align: center;
+    font-size: 1.5rem;
+    margin: 0 5rem 0 5rem;
+  }
+
+  .popover-body {
+    font-size: 0.9rem;
   }
 }
