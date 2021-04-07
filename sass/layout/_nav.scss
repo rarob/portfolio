@@ -1,57 +1,44 @@
-.navbar.navbar-expand-lg.navbar-light.bg-light {
-  .container-fluid {
-    .navbar-nav.margin-override {
-      margin-left: 3rem;
-      li {
-        padding-right: 1.5rem;
-      }
-    }
-    .navbar-toggler {
-      margin-left: 50%;
-      background-color: $light-blue;
-    }
-
-    .icon-navbar {
-      margin-right: 9rem;
-      display: inherit;
-      list-style: none;
-      li {
-        padding-right: 20%;
-
-        #contact {
-          color: $light-blue;
-          background-color: transparent;
-          margin-top: 35%;
-          border-radius: 30%;
-          border: none;
-          width: 115%;
-          #contact-link {
-            color: $light-blue !important;
-            text-decoration: none;
-          }
-        }
-        ion-icon {
-          color: white;
-          margin-top: 50%;
-        }
-      }
-    }
-  }
-}
-
-.navbar {
-  .navbar-brand {
-    margin-left: 3%;
-  }
-}
-
 .navbar.transparent.navbar-expand-lg.navbar-light.bg-light {
   background-image: url("../img/black.jpg");
-}
-.navbar-inner {
-  background: transparent;
-}
+  .navbar-nav {
+    margin-left: 2%;
+    #content.nav-link.active {
+      margin-top: 1.5%;
+    }
+  }
+  .container-fluid {
+    .navbar-brand {
+      margin-left: 3vw;
+      font-family: "Dela Gothic One", cursive;
+    }
+    .icon-navbar {
+      display: flex;
 
+      #contact {
+        margin: 1.5rem 2rem 0 0;
+
+        #contact-link {
+          color: $light-blue;
+          text-decoration: none;
+          &:hover {
+            color: white;
+          }
+        }
+      }
+      .icon {
+        padding-right: 1vw;
+        margin-top: 8%;
+        ion-icon {
+          color: white;
+          &:hover {
+            color: $light-blue;
+          }
+        }
+      }
+    }
+  }
+}
+/*
 @media (max-width: $breakpoint-tablet) {
   .navbar.navbar-expand-lg.navbar-light.bg-light {
     .container-fluid {
@@ -82,7 +69,7 @@
             border: none;
             width: 115%;
             #contact-link {
-              color: $light-blue !important;
+              color: $light-blue;
               text-decoration: none;
             }
           }
@@ -95,3 +82,46 @@
     }
   }
 }
+
+@media (max-width: $breakpoint-mobile) {
+  .navbar.navbar-expand-lg.navbar-light.bg-light {
+    .container-fluid {
+      .navbar-nav.margin-override {
+      }
+      .navbar-toggler {
+        margin-left: 50%;
+        background-color: $light-blue;
+        display: none;
+      }
+
+      .icon-navbar {
+        width: auto;
+
+        list-style: none;
+        margin: 0 !important;
+        padding: 0 !important;
+
+        li {
+          padding-top: 0;
+          #contact {
+            color: $light-blue;
+            background-color: transparent;
+            margin-top: 35%;
+            border-radius: 30%;
+            border: none;
+
+            #contact-link {
+              color: $light-blue;
+              text-decoration: none;
+            }
+          }
+          ion-icon {
+            color: white;
+            margin-top: 50%;
+          }
+        }
+      }
+    }
+  }
+}
+*/

@@ -16,19 +16,19 @@
 }
 
 .navbar {
-  font-size: 1.7rem;
-  a {
-    color: white !important;
-  }
-  #content {
-    &:hover {
-      color: $light-blue !important;
-      font-size: 1.5rem;
+  font-size: 1.9rem;
+  .container-fluid {
+    .navbar-brand {
+      font-size: 4rem;
+      color: white;
     }
   }
-  .navbar-brand {
-    font-size: 3rem;
+  #content.nav-link.active {
     color: white;
+    &:hover {
+      color: $light-blue;
+      font-size: 2rem;
+    }
   }
 }
 

@@ -35,3 +35,26 @@
     }
   }
 }
+
+@media (max-width: $breakpoint-mobile) {
+  .header {
+    margin-top: 20vh;
+
+    .heading-2 {
+      margin-right: 4rem;
+      margin-left: 4rem;
+      .one {
+        animation: fadein 3s;
+        animation-delay: 0;
+      }
+      .two {
+        animation: fadein 5s;
+        animation-delay: 0;
+      }
+      .three {
+        animation: fadein 7s;
+        animation-delay: 0;
+      }
+    }
+  }
+}
