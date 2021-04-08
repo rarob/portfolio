@@ -36,14 +36,29 @@
           color: white;
         }
         p.card-text {
-          font-size: 1.5rem;
+          padding: 0 1rem 0 1rem;
+          min-height: 12rem;
+          font-size: 1.6rem;
           color: white;
-          text-align: left;
+          text-align: center;
+        }
+        #skills-used--header {
+          display: flex;
+          justify-content: center;
+          margin-bottom: 1rem;
+          color: white;
+          font-size: 1.6rem;
         }
         .skills-list {
-          color: white;
-          font-size: 1.5rem;
+          display: inline-flexbox;
           list-style-type: disc;
+          text-align: left;
+
+          li {
+            color: white;
+            font-size: 1.6rem;
+          }
+
           #inv {
             color: transparent;
           }
@@ -75,166 +90,166 @@
     }
   }
 }
-/*
-@media only screen and (max-width: $breakpoint-tablet) {
+//IPADS
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
   .projects {
     justify-content: center;
     margin-bottom: 5%;
     #projects-header {
       @include section-headers;
-
       padding-top: 10rem;
     }
 
-    .card-holder {
-      display: block;
-
+    .card-container {
+      display: flex;
       justify-content: center;
-      padding-top: 1%;
-    }
-    .card {
-      width: auto;
-      height: auto;
-
-      background-color: #1f2833;
-      margin: 0 !important;
-      border-radius: 5%;
-      border-style: solid;
-      border-color: black;
-      border-width: 1.5rem;
-
-      .skills-list {
-        color: white;
-        font-size: 1.5rem;
-        list-style-type: disc;
-        #inv {
-          color: transparent;
+      padding-top: 1vh;
+      .spacer-left {
+        margin-left: 1vw;
+        margin-right: 0.5vw;
+      }
+      .spacer-right {
+        margin-left: 0.5vw;
+        margin-right: 1vw;
+      }
+      .card {
+        width: 45rem;
+        background-color: #1f2833;
+        border-radius: 5%;
+        img.card-img-top {
+          border-radius: 20%;
         }
-      }
-
-      img.card-img-top {
-        margin-top: 1rem;
-        margin-left: 25%;
-        border-radius: 20%;
-        height: 30rem;
-        width: 30rem;
-      }
-      p {
-        font-size: 1.5rem;
-        text-align: left;
-      }
-      h5 {
-        color: white;
-        font-size: 2rem;
-        font-weight: 1000;
-        text-align: center;
-      }
-      hr {
-        color: white;
-      }
-      #btn-container {
-        display: flex;
-        justify-content: center;
-        margin: 0 !important;
-        .btn.btn-primary {
-          font-weight: 400;
-          font-size: 1.5rem;
-          color: white;
-          background-color: black;
-          border-color: #45a29e;
-          &:hover {
-            font-size: 1.6rem;
+        .card-body {
+          height: auto;
+          h5.card-title {
+            color: white;
+            font-size: 2rem;
+            font-weight: 1000;
+            text-align: center;
           }
-        }
-        #btn-two {
-          background-color: $light-blue;
-          color: black;
-          border-color: black;
-          border-width: 0.2rem;
+          hr {
+            color: white;
+          }
+          p.card-text {
+            font-size: 1.5rem;
+            color: white;
+            text-align: left;
+            height: 80vh;
+          }
+          .skills-list {
+            color: white;
+            font-size: 1.5rem;
+            list-style-type: disc;
+            #inv {
+              color: transparent;
+            }
+          }
+
+          #btn-container {
+            display: flex;
+            justify-content: center;
+
+            .btn.btn-primary {
+              font-weight: 700;
+              font-size: 108%;
+              color: white;
+              background-color: black;
+              border-color: #45a29e;
+              &:hover {
+                font-size: 1.6rem;
+              }
+            }
+            #btn-two {
+              background-color: $light-blue;
+              color: black;
+              border-color: black;
+              border-width: 0.2rem;
+              margin-left: 0.5rem;
+            }
+          }
         }
       }
     }
   }
 }
-
-@media only screen and (max-width: $breakpoint-mobile) {
+//PHONES
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
   .projects {
     justify-content: center;
     margin-bottom: 5%;
+
     #projects-header {
       @include section-headers;
-
-      padding-top: 10rem;
     }
-
-    .card-holder {
+    #skills--subheader.projects--subheader {
+      color: white !important;
+      text-align: center;
+      font-size: 1.5rem;
+      margin: 0 5rem 2rem 5rem;
+    }
+    .card-container {
       display: block;
 
-      justify-content: center;
-      padding-top: 1%;
-    }
-    .card {
-      width: auto;
-      height: auto;
+      padding-top: 1vh;
 
-      background-color: #1f2833;
-      margin: 0 !important;
-      border-radius: 5%;
-      border-style: solid;
-      border-color: black;
-      border-width: 1.5rem;
-
-      .skills-list {
-        color: white;
-        font-size: 1.5rem;
-        list-style-type: disc;
-        #inv {
-          color: transparent;
+      .card {
+        width: 100%;
+        background-color: #1f2833;
+        border-radius: 5%;
+        margin-bottom: 1.5rem;
+        img.card-img-top {
+          border-radius: 20%;
+          width: 100%;
         }
-      }
-
-      img.card-img-top {
-        margin-top: 1rem;
-        margin-left: 7%;
-        border-radius: 20%;
-        height: 30rem;
-        width: 30rem;
-      }
-      p {
-        font-size: 1.5rem;
-        text-align: left;
-      }
-      h5 {
-        color: white;
-        font-size: 2rem;
-        font-weight: 1000;
-        text-align: center;
-      }
-      hr {
-        color: white;
-      }
-      #btn-container {
-        display: flex;
-        justify-content: center;
-        margin: 0 !important;
-        .btn.btn-primary {
-          font-weight: 400;
-          font-size: 1.5rem;
-          color: white;
-          background-color: black;
-          border-color: #45a29e;
-          &:hover {
-            font-size: 1.6rem;
+        .card-body {
+          height: auto;
+          h5.card-title {
+            color: white;
+            font-size: 2rem;
+            font-weight: 1000;
+            text-align: center;
           }
-        }
-        #btn-two {
-          background-color: $light-blue;
-          color: black;
-          border-color: black;
-          border-width: 0.2rem;
+          hr {
+            color: white;
+          }
+          p.card-text {
+            font-size: 1.5rem;
+            color: white;
+            text-align: left;
+          }
+          .skills-list {
+            color: white;
+            font-size: 1.5rem;
+            list-style-type: disc;
+            #inv {
+              display: none;
+            }
+          }
+
+          #btn-container {
+            display: flex;
+            justify-content: center;
+
+            .btn.btn-primary {
+              font-weight: 700;
+              font-size: 108%;
+              color: white;
+              background-color: black;
+              border-color: #45a29e;
+              &:hover {
+                font-size: 1.6rem;
+              }
+            }
+            #btn-two {
+              background-color: $light-blue;
+              color: black;
+              border-color: black;
+              border-width: 0.2rem;
+              margin-left: 0.5rem;
+            }
+          }
         }
       }
     }
   }
 }
-*/

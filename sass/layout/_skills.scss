@@ -39,5 +39,91 @@
   }
 }
 
-@media screen only and (max-width: $breakpoint-tablet) {
+//IPADS
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  .skills#skills {
+    .container {
+      display: flex;
+
+      .row {
+        margin-top: 2rem;
+
+        .col {
+          text-align: center;
+          color: white;
+
+          #html {
+            width: 65%;
+            height: 85%;
+          }
+          #bs {
+            width: 65%;
+            height: 85%;
+          }
+          #scss {
+            width: 65%;
+            height: 85%;
+          }
+          #js {
+            width: 65%;
+            height: 85%;
+          }
+          .btn.btn-secondary {
+            background-color: transparent;
+            border: none;
+            padding: 0;
+
+            &::after {
+              border: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+//phones
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  .skills#skills {
+    margin-top: 5rem;
+    .container {
+      display: flex;
+
+      .row {
+        margin-top: 2rem;
+
+        .col {
+          text-align: center;
+          color: white;
+
+          #html {
+            width: 65%;
+            height: 85%;
+          }
+          #bs {
+            width: 65%;
+            height: 85%;
+          }
+          #scss {
+            width: 65%;
+            height: 85%;
+          }
+          #js {
+            width: 65%;
+            height: 85%;
+          }
+          .btn.btn-secondary {
+            background-color: transparent;
+            border: none;
+            padding: 0;
+
+            &::after {
+              border: none;
+            }
+          }
+        }
+      }
+    }
+  }
 }
