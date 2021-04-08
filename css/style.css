@@ -174,7 +174,7 @@ body {
     color: white !important;
     text-align: center;
     font-size: 1.5rem;
-    margin: 0 5rem 0 5rem;
+    margin: 0 2rem 0 2rem;
   }
 
   .popover-body {
@@ -185,6 +185,7 @@ body {
     text-align: center;
     color: #66fcf1;
     font-size: 5rem;
+    padding-top: 5rem !important;
   }
   .projects p.card-text {
     color: white;
@@ -571,20 +572,20 @@ body {
     color: white;
   }
   .skills#skills .container .row .col #html {
-    width: 65%;
-    height: 85%;
+    width: 85%;
+    height: 105%;
   }
   .skills#skills .container .row .col #bs {
-    width: 65%;
-    height: 85%;
+    width: 85%;
+    height: 105%;
   }
   .skills#skills .container .row .col #scss {
-    width: 65%;
-    height: 85%;
+    width: 85%;
+    height: 105%;
   }
   .skills#skills .container .row .col #js {
-    width: 65%;
-    height: 85%;
+    width: 85%;
+    height: 105%;
   }
   .skills#skills .container .row .col .btn.btn-secondary {
     background-color: transparent;
@@ -731,7 +732,7 @@ body {
     font-size: 1.5rem;
     color: white;
     text-align: left;
-    height: 80vh;
+    height: 30vh;
   }
   .projects .card-container .card .card-body .skills-list {
     color: white;
@@ -837,7 +838,7 @@ body {
     color: black;
     border-color: black;
     border-width: 0.2rem;
-    margin-left: 0.5rem;
+    margin-left: 1.5rem;
   }
 }
 
