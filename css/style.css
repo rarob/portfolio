@@ -27,6 +27,7 @@ html {
 
 body {
   background: url("../img/black.jpg") no-repeat fixed;
+  background-size: cover;
   box-sizing: border-box;
   height: auto;
   width: auto;
@@ -284,7 +285,7 @@ body {
   }
 }
 .navbar.transparent.navbar-expand-lg.navbar-light.bg-light {
-  background-image: url("../img/black.jpg");
+  background-color: transparent !important;
 }
 .navbar.transparent.navbar-expand-lg.navbar-light.bg-light .navbar-nav {
   margin-left: 2%;
@@ -298,6 +299,7 @@ body {
 }
 .navbar.transparent.navbar-expand-lg.navbar-light.bg-light .container-fluid .icon-navbar {
   display: flex;
+  list-style-type: none;
 }
 .navbar.transparent.navbar-expand-lg.navbar-light.bg-light .container-fluid .icon-navbar #contact {
   margin: 1.5rem 2rem 0 0;

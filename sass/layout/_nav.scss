@@ -1,5 +1,5 @@
 .navbar.transparent.navbar-expand-lg.navbar-light.bg-light {
-  background-image: url("../img/black.jpg");
+  background-color: transparent !important;
   .navbar-nav {
     margin-left: 2%;
     #content.nav-link.active {
@@ -13,6 +13,7 @@
     }
     .icon-navbar {
       display: flex;
+      list-style-type: none;
 
       #contact {
         margin: 1.5rem 2rem 0 0;
