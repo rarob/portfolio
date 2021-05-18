@@ -18,11 +18,36 @@
       #contact {
         margin: 1.5rem 2rem 0 0;
 
-        #contact-link {
-          color: $light-blue;
+        #contact-modal {
+          font-size: 1.2rem;
+          color: white;
+          border-color: $light-blue;
+          background-color: black;
           text-decoration: none;
+
           &:hover {
-            color: white;
+            color: black;
+            background-color: $light-blue;
+            border-color: black;
+          }
+        }
+        div.modal.fade#exampleModal {
+          div.modal-dialog {
+            div.modal-content {
+              div#modal--title-head.modal-header {
+                h5#modal--title.modal-title {
+                  font-size: 2rem;
+                }
+              }
+              #contact-p {
+              }
+              #mobile {
+                text-decoration: none;
+              }
+              #email {
+                text-decoration: none;
+              }
+            }
           }
         }
       }

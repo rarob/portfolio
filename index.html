@@ -12,9 +12,17 @@
     gtag('config', 'G-7SSH2PH78J');
   </script>
   <meta charset="UTF-8" />
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous" />
+
+
+
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
   <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet" />
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
@@ -41,12 +49,39 @@
       </ul>
     </div>
     <ul class="icon-navbar">
-      <li id="contact">
 
-        <a id='contact-link' href="https://www.linkedin.com/in/bobby-r-00347a1b9/detail/contact-info/"
-          target="_blank"><i>Contact</i></a>
+      <li id="contact">
+        <!-- Button trigger modal -->
+        <button type="button" id='contact-modal' class="btn btn-primary" data-bs-toggle="modal"
+          data-bs-target="#exampleModal">
+          Contact
+        </button>
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header" id='modal--title-head'>
+                <h5 class="modal-title" id="modal--title">Let's Build Something Great</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <p id='contact-p'></p>
+                <b>Mobile:</b> <a href='tel:5132926376' id='mobile'>(513) 292-6376</a><br>
+                <b>Email:</b> <a href='mailto:robinson.a.bobby@gmail.com' id='email'>robinson.a.bobby@gmail.com</a>
+                </br>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+
 
       </li>
+
+
+
       <li class="icon">
         <a class="icon-link" href="https://github.com/rarob?tab=repositories">
           <ion-icon size="large" name="logo-github"></ion-icon>
@@ -97,18 +132,21 @@
               <div id='am' class='about-me-container'>
 
 
-                <p id='about-me-p'>My passion for technology began at a very young age. From installing my own GPU &
-                  learning how
-                  to modify my video games as a child, to taking CS & web development courses in high school and
-                  college as a young adult. My insatiable curiosity & desire to learn new things fueled my interest
-                  in a career in the constantly evolving industry that is software development.
+                <p id='about-me-p'>I currently work as a part-time Front-end Developer & Designer for HRP Marketing, a
+                  small firm located in Santa Maria, CA. From design to deployment, I work directly with the management
+                  team to deliver websites for our clients businesses that utilize the most efficient SEO practices &
+                  elegant interfaces.
                   <br><br>
-                  I'm hardworking, passionate, quick learner, & natural problem solver with proven communication &
-                  leadership skills.
+                  As a mostly self-taught developer, I've accumulated 5 years of customer service & leadership
+                  experience through employment in fast-paced retail & food establishments during my journey through
+                  learning web development. I quickly proved myself as an
+                  effective communicator with a mind for problem solving, & made my way up to Trainer & Shift
+                  Lead positions within reputable companies including Whole Foods Market, Panera Bread, & PetsMart.
                   <br><br>
-                  I've enjoyed building everything from business sites to and interactive web apps, and I'm excited to
-                  continue my learning journey with new technologies, projects, and assignments. I hope to hear from you
-                  soon!<br>
+                  Since then, I've enjoyed building everything from landing pages for businesses to interactive &
+                  practical web
+                  applications as I continue on my journey of endless learning. My insatiable desire to succeed & strong
+                  work ethic propels my growth as a developer, & I can't wait to see what we can accomplish. <br>
 
                 </p>
               </div>
@@ -125,14 +163,8 @@
       <b>Skills</b>
     </h1>
     <p id='skills--subheader'>
-
-      Below is a list of web technologies I've mastered, but by no means limited to, as I'm always learning & expanding
-      my
-      skill set each & every day.
-
-      Click each
-      icon to
-      learn more
+      Technologies I'm most familiar with, but not limited to:
+      <br>(click icons for additional information)
     </p>
 
     <div class="container">
@@ -164,7 +196,7 @@
         <div class="col">
           <button type="button" class="btn btn-secondary" data-bs-container="body" data-bs-toggle="popover"
             data-bs-placement="bottom"
-            data-bs-content="ES6, Agile, Object Oriented Programming, DOM Manipulation, Libraries, jQuery, JSON, RESTful & 3rd Party API Integration">
+            data-bs-content="ES6, OOP, DOM Manipulation, Libraries, jQuery, JSON, RESTful & 3rd Party API Integration">
             <img id='js' src='https://rarob.github.io/portfolio-final/img/javascript.png' alt="Javascript"></button>
         </div>
 
@@ -193,10 +225,7 @@
       <b>Projects</b>
     </h1>
     <p id='skills--subheader' class='projects--subheader'>
-      A collection of my completed projects, with navigational buttons to both live demos hosted on GitHub Pages and
-      their
-      respective
-      repositories</p>
+      Collection of personal projects I've created</p>
 
     <div class='card-container'>
 
@@ -208,10 +237,10 @@
         <div class="card-body">
           <h5 class="card-title">Tetris</h5>
           <hr>
-          <p class="card-text">Classic Tetris that utilizes JS matrices to
-            generate the 5 Tetris game pieces, draws them onto the HTML
-            canvas element, and tracks current score. Use Q to rotate counter-clockwise, E to rotate clockwise, and down
-            arrow key to speed falling speed.
+          <p class="card-text">A simple Tetris game made in JavaScript & HTML. Utilizes JavaScript matrices to generate
+            game
+            pieces, track object movement, & keep score onto an HTML canvas element. <b>Controls: Q - Rotate
+              CC. W - Rotate Clockwise. Arrow Keys - Accelerate/Move pieces</b>
           </p>
 
           <hr>
@@ -243,9 +272,9 @@
         <div class="card-body">
           <h5 class="card-title">Weather App</h5>
           <hr>
-          <p class="card-text">A single page, responsive web app that queries and tabulates weather data from
-            OpenWeatherMap API based on
-            user inputted zip code or location data recieved via JS Geolocation API
+          <p class="card-text">Fully responsive local weather web application. Utilizes HTML, Bootstrap, AJAX, & JSON to
+            recieve real-time location via browser or zip code input, returns empirical weather data of that area &
+            corresponding iconography that I matched with specific JSON values.
           </p>
 
           <hr>
@@ -254,10 +283,10 @@
             <ul class='skills-list'>
               <li>HTML</li>
               <li>Javascript</li>
-              <li>jQuery</li>
+              <li>AJAX</li>
               <li>JSON</li>
               <li>Bootstrap</li>
-
+              <li id='inv'></li>
 
             </ul>
           </div>
@@ -277,9 +306,9 @@
         <div class="card-body">
           <h5 class="card-title">Landing Page</h5>
           <hr>
-          <p class="card-text">Mockup E-Commerce landing page modeled after Magneto longboards website. The sole purpose
-            of this project is to serve as a landing/home page. Uses SlickJS component library and Bootstrap to create
-            an appealing and user-friendly layout.
+          <p class="card-text">Mock-up landing page for an e-commerce site that utilizes HTML, Bootstrap, & JavaScript
+            libraries for a visually appealing webpage & clean UI. This project is mobile-friendly and shows efficient
+            design & integration of 3rd party JavaScript libraries.
           </p>
 
           <hr>
@@ -315,9 +344,10 @@
         <div class="card-body">
           <h5 class="card-title">Portfolio Site</h5>
           <hr>
-          <p class="card-text">My portfolio webpage (where you are now) built with Bootstrap, HTML and Sass using a 7-1
-            file structure for optimal styling organization. This webpage has been made responsive to all Apple and
-            Samsung mobile phones and tablets.
+          <p class="card-text">My fully responsive portfolio webpage (where you are now) built with Bootstrap, HTML &
+            SASS. I built this
+            webpage following the 7-1 folder structure to provide a scalable environment for future additions of
+            projects & related information.
 
 
           </p>
@@ -368,6 +398,7 @@
     })
 
   </script>
+  <script src='js/modal.js'></script>
 </body>
 
 </html>

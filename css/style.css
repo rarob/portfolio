@@ -304,12 +304,26 @@ body {
 .navbar.transparent.navbar-expand-lg.navbar-light.bg-light .container-fluid .icon-navbar #contact {
   margin: 1.5rem 2rem 0 0;
 }
-.navbar.transparent.navbar-expand-lg.navbar-light.bg-light .container-fluid .icon-navbar #contact #contact-link {
-  color: #66fcf1;
+.navbar.transparent.navbar-expand-lg.navbar-light.bg-light .container-fluid .icon-navbar #contact #contact-modal {
+  font-size: 1.2rem;
+  color: white;
+  border-color: #66fcf1;
+  background-color: black;
   text-decoration: none;
 }
-.navbar.transparent.navbar-expand-lg.navbar-light.bg-light .container-fluid .icon-navbar #contact #contact-link:hover {
-  color: white;
+.navbar.transparent.navbar-expand-lg.navbar-light.bg-light .container-fluid .icon-navbar #contact #contact-modal:hover {
+  color: black;
+  background-color: #66fcf1;
+  border-color: black;
+}
+.navbar.transparent.navbar-expand-lg.navbar-light.bg-light .container-fluid .icon-navbar #contact div.modal.fade#exampleModal div.modal-dialog div.modal-content div#modal--title-head.modal-header h5#modal--title.modal-title {
+  font-size: 2rem;
+}
+.navbar.transparent.navbar-expand-lg.navbar-light.bg-light .container-fluid .icon-navbar #contact div.modal.fade#exampleModal div.modal-dialog div.modal-content #mobile {
+  text-decoration: none;
+}
+.navbar.transparent.navbar-expand-lg.navbar-light.bg-light .container-fluid .icon-navbar #contact div.modal.fade#exampleModal div.modal-dialog div.modal-content #email {
+  text-decoration: none;
 }
 .navbar.transparent.navbar-expand-lg.navbar-light.bg-light .container-fluid .icon-navbar .icon {
   padding-right: 1vw;
@@ -332,7 +346,7 @@ body {
   width: 15rem;
   height: 17rem;
   margin-bottom: 2rem;
-  border-radius: 50%;
+  border-radius: 40%;
   border-width: 0.3rem;
   border-style: solid;
   border-color: #66fcf1;
@@ -563,7 +577,7 @@ body {
 }
 .projects .card-container .card .card-body p.card-text {
   padding: 0 1rem 0 1rem;
-  height: 12vh;
+  height: auto;
   font-size: 1.6rem;
   color: white;
   text-align: left;
@@ -657,7 +671,7 @@ body {
     font-size: 1.5rem;
     color: white;
     text-align: left;
-    height: 27vh;
+    height: auto;
   }
   .projects .card-container .card .card-body .skills-list {
     color: white;
@@ -736,6 +750,7 @@ body {
     font-size: 1.7rem;
     color: white;
     text-align: left;
+    height: auto;
   }
   .projects .card-container .card .card-body .skills-list {
     color: white;
